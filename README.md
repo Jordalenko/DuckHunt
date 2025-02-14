@@ -108,7 +108,7 @@ In order to deploy the [repository](https://jordalenko.github.io/DuckHunt/) from
 
 Image Sources:
 
-background image was sourced from [repository] (https://github.com/vaielab/DuckHuntCss/stage.png)
+background image was sourced from [repository] (https://github.com/vaielab/DuckHuntCss/blob/master/stage.png)
 
 
 ### Acknowledgements
