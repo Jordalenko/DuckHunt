@@ -4,5 +4,5 @@ let count = 0;
 function shoot(bird) {
     bird.style.display = "none";
 
-    document.getElementById("score").innerHTML = ++count;
+    document.getElementById("score").innerHTML = "Score:" + ++count;
 }

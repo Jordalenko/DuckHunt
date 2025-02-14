@@ -9,8 +9,10 @@ body {
 
 #score {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
+    color: aliceblue;
+    font-size: 40px;
 }
 
 .large {
