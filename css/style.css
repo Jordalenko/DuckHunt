@@ -22,25 +22,25 @@ body {
 #b1 {
     right: 90%;
     animation-name: bird1;
-    animation-duration: 3s;
+    animation-duration: 4.5s;
 }
 
 #b2 {
     left: 90%;
     animation-name: bird2;
-    animation-duration: 3s;
+    animation-duration: 4.9s;
 }
 
 #b3 {
     right: 80%;
     animation-name: bird3;
-    animation-duration: 7s;
+    animation-duration: 5.7s;
 }
 
 #b4 {
     left: 80%;
     animation-name: bird4;
-    animation-duration: 7s;
+    animation-duration: 5.7s;
 }
 
 #b5 {
@@ -76,7 +76,7 @@ body {
 }
 
 @keyframes bird2 {
-    10% {right: 10%; bottom: 20%}
+    10% {right: 10%; bottom: 30%}
     30% {right: 25%; bottom: 50%}
     40% {left: 40%; bottom: 70%}
     70% {left: 20%; bottom: 15%}
@@ -84,26 +84,26 @@ body {
 }
 
 @keyframes bird3 {
-    10% {left: 20%; bottom: 30%}
-    30% {left: 30%; bottom: 50%}
-    50% {left: 40%; bottom: 70%}
+    10% {left: 10%; bottom: 90%}
+    30% {left: 20%; bottom: 30%}
+    50% {left: 40%; bottom: 60%}
     70% {left: 60%; bottom: 30%}
     100% {left: 100%; bottom: 100%}
 }
 
 @keyframes bird4 {
-    10% {right: 10%; bottom: 20%}
-    30% {right: 25%; bottom: 50%}
-    40% {left: 40%; bottom: 70%}
-    70% {left: 20%; bottom: 15%}
-    100% {left: -20%; bottom: 100%}
+    10% {right: 20%; bottom: 40%}
+    30% {right: 50%; bottom: 20%}
+    40% {left: 60%; bottom: 30%}
+    70% {left: 30%; bottom: 55%}
+    100% {left: -40%; bottom: 100%}
 }
 
 @keyframes bird5 {
-    10% {left: 20%; bottom: 30%}
-    30% {left: 30%; bottom: 50%}
-    50% {left: 40%; bottom: 70%}
-    70% {left: 60%; bottom: 30%}
+    10% {left: 0%; bottom: 40%}
+    30% {left: 20%; bottom: 50%}
+    50% {left: 40%; bottom: 20%}
+    70% {left: 60%; bottom: 60%}
     100% {left: 100%; bottom: 100%}
 }
 
@@ -116,10 +116,10 @@ body {
 }
 
 @keyframes bird7 {
-    10% {left: 20%; bottom: 30%}
-    30% {left: 30%; bottom: 50%}
-    50% {left: 40%; bottom: 70%}
-    70% {left: 60%; bottom: 30%}
+    10% {left: 0%; bottom: 40%}
+    30% {left: 20%; bottom: 50%}
+    50% {left: 40%; bottom: 60%}
+    70% {left: 60%; bottom: 40%}
     100% {left: 100%; bottom: 100%}
 }
 
