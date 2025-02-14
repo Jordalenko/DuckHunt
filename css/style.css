@@ -7,8 +7,14 @@ body {
     overflow: hidden;
 }
 
+#score {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
 .large {
-    width: 120px;
+    width: 119px;
     position: absolute;
     bottom: 15%;
 }
@@ -22,7 +28,7 @@ body {
 #b1 {
     right: 90%;
     animation-name: bird1;
-    animation-duration: 4.5s;
+    animation-duration: 5.5s;
 }
 
 #b2 {
@@ -34,25 +40,25 @@ body {
 #b3 {
     right: 80%;
     animation-name: bird3;
-    animation-duration: 5.7s;
+    animation-duration: 7s;
 }
 
 #b4 {
     left: 80%;
     animation-name: bird4;
-    animation-duration: 5.7s;
+    animation-duration: 7s;
 }
 
 #b5 {
     right: 70%;
     animation-name: bird5;
-    animation-duration: 3s;
+    animation-duration: 6s;
 }
 
 #b6 {
     left: 70%;
     animation-name: bird6;
-    animation-duration: 3s;
+    animation-duration: 6s;
 }
 
 #b7 {
