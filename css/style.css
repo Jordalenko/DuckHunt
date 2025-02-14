@@ -6,16 +6,28 @@ body {
     background-size: cover;
 }
 
+.large {
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+}
+
+.small {
+    width: 400px;
+    position: absolute;
+    bottom: -14%;
+}
+
 #b1 {
     right: 0;
 }
 
 #b2 {
-    right: 20%;
+    left: 0;
 }
 
 #b3 {
-    left: 0;
+    right: 20%;
 }
 
 #b4 {
