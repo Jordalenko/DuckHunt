@@ -7,12 +7,16 @@ body {
     overflow: hidden;
 }
 
-#score {
+#score, #bullets {
     position: absolute;
     bottom: 40px;
-    right: 40px;
+    right: 60px;
     color: aliceblue;
     font-size: 40px;
+}
+
+#bullets {
+    left: 40px;
 }
 
 .large {
@@ -24,7 +28,7 @@ body {
 .small {
     width: 400px;
     position: absolute;
-    bottom: -1%;
+    bottom: 1%;
 }
 
 #b1 {
