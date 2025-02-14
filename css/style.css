@@ -10,13 +10,13 @@ body {
 .large {
     width: 120px;
     position: absolute;
-    bottom: 0;
+    bottom: 15%;
 }
 
 .small {
     width: 400px;
     position: absolute;
-    bottom: -14%;
+    bottom: -1%;
 }
 
 #b1 {
