@@ -5,3 +5,35 @@ body {
     background-position: bottom;
     background-size: cover;
 }
+
+#b1 {
+    right: 0;
+}
+
+#b2 {
+    right: 20%;
+}
+
+#b3 {
+    left: 0;
+}
+
+#b4 {
+    left: 20%;
+}
+
+#b5 {
+    right: 40%;
+}
+
+#b6 {
+    left: 40%;
+}
+
+#b7 {
+    right: 80%;
+}
+
+#b8 {
+    left: 80%;
+}
