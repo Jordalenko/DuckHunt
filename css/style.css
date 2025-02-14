@@ -19,33 +19,33 @@ body {
 }
 
 #b1 {
-    right: 0;
+    right: 90%;
 }
 
 #b2 {
-    left: 0;
+    left: 90%;
 }
 
 #b3 {
-    right: 20%;
-}
-
-#b4 {
-    left: 20%;
-}
-
-#b5 {
-    right: 40%;
-}
-
-#b6 {
-    left: 40%;
-}
-
-#b7 {
     right: 80%;
 }
 
-#b8 {
+#b4 {
     left: 80%;
+}
+
+#b5 {
+    right: 70%;
+}
+
+#b6 {
+    left: 70%;
+}
+
+#b7 {
+    right: 60%;
+}
+
+#b8 {
+    left: 60%;
 }
