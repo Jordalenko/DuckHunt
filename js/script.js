@@ -11,15 +11,12 @@ function shoot(bird) {
     }
 
     window.onclick = function(e) {
+        bullets--;
         if(bullets >= 0) {
-            bullets--;
-            document.getElementById("bullets").innerHTML = bullets;
+                document.getElementById("bullets").innerHTML = bullets;
+        } if(e.target.nodeName == "IMG") {
+            document.getElementById("hit").play();
+        } else {
+            document.getElementById("miss").play();
         }
-
-            if(e.target.nodeName == "IMG") {
-                document.getElementById("fire").play();
-            }
-            else() {
-                document.getElementById("miss").play();
-            }
     }
