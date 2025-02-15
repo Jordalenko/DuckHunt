@@ -112,6 +112,8 @@ background image was sourced from [repository] (https://github.com/vaielab/DuckH
 
 Duck gifs were sourced from (https://lagg.fr/wp-content/uploads/2022/11/duck.gif) and (https://images.app.goo.gl/QE9Z6SLwoDYBcaMZA).
 
+bullet icon was sourced from (https://beta.arasaac.org/pictograms/search/hunting).
+
 Sound Sources:
 
 Bullet sound effects were sourced from (https://pixabay.com/sound-effects/search/bullet/).

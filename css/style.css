@@ -7,9 +7,13 @@ body {
     overflow: hidden;
 }
 
+/* cursor */
+
 html {
     cursor: crosshair;
 }
+
+/* Data Bar */
 
 #score, #bullets {
     position: absolute;
@@ -23,10 +27,12 @@ html {
     left: 40px;
 }
 
-.large {
+/* Birds */
+
+.bird-size {
     width: 119px;
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
 }
 
 #b1 {
