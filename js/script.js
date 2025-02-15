@@ -1,10 +1,10 @@
-let bullets = 5;
+let bullets = 8;
 let count = 0;
 
 function shoot(bird) {
     if (bullets > 0) {
     bird.style.display = "none";
-    document.getElementById("score").innerHTML = ++count;
+    document.getElementById("score").innerHTML = `Score: ${++count}`;
     } else if (bullets == -1) {
             alert("Reload Page");
         }
@@ -13,10 +13,11 @@ function shoot(bird) {
     window.onclick = function(e) {
         bullets--;
         if(bullets >= 0) {
-                document.getElementById("bullets").innerHTML = bullets;
-        } if(e.target.nodeName == "IMG") {
-            document.getElementById("hit").play();
-        } else {
-            document.getElementById("miss").play();
-        }
+                document.getElementById("bullets").innerHTML = `Bullets: ${bullets}`;
+                if(e.target.nodeName == "IMG") {
+                    document.getElementById("hit").play();
+                } else {
+                    document.getElementById("miss").play();
+                }
+        } 
     }
