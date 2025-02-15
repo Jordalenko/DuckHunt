@@ -10,9 +10,16 @@ function shoot(bird) {
         }
     }
 
-    window.onclick = function() {
-        bullets--;
+    window.onclick = function(e) {
         if(bullets >= 0) {
-                document.getElementById("bullets").innerHTML = bullets;
+            bullets--;
+            document.getElementById("bullets").innerHTML = bullets;
         }
+
+            if(e.target.nodeName == "IMG") {
+                document.getElementById("fire").play();
+            }
+            else() {
+                document.getElementById("miss").play();
+            }
     }
