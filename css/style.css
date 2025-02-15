@@ -7,6 +7,10 @@ body {
     overflow: hidden;
 }
 
+html {
+    cursor: crosshair;
+}
+
 #score, #bullets {
     position: absolute;
     bottom: 40px;
@@ -20,12 +24,6 @@ body {
 }
 
 .large {
-    width: 119px;
-    position: absolute;
-    bottom: 15%;
-}
-
-.small {
     width: 119px;
     position: absolute;
     bottom: 15%;
