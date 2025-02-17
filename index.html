@@ -8,10 +8,13 @@
 	src="./js/jquery/jquery-3.7.1.js" type="text/javascript"></script>
     <title>Duck Hunt</title>
 </head>
+
 <body>
-<section class="backgrnd"></section>
+
+<!--  <section class="backgrnd"> -->
 
 <!-- ducks -->
+
     <img id="b1" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
     <img id="b2" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
     <img id="b3" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
@@ -21,7 +24,7 @@
     <img id="b7" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
     <img id="b8" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
 
-</section>
+<!--  </section> -->
 
 <section class="foregrnd">
 
@@ -29,9 +32,12 @@
 
     <div class="score-box" id="score">Score: <span id="currentScore">0</span></div>
 
+    <!-- duck Icons -->
 
     <div class="bullet-box" id="bullets">Bullets: <span id="currentBullets">8</span>
+
      <!-- Bullet Icons
+
     <img id="blt1" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
     <img id="blt2" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
     <img id="blt3" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
@@ -40,6 +46,7 @@
     <img id="blt6" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
     <img id="blt7" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
     <img id="blt8" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
+    
     -->
 
     </div>
@@ -47,6 +54,7 @@
 </section>
 
 <!-- audio -->
+
     <audio src="./resources/audio/bullet-hit-v2.m4a" id="hit"></audio>
     <audio src="./resources/audio/bullet-miss-v2.m4a" id="miss"></audio>
 
