@@ -1,10 +1,25 @@
-body {
+#backgrnd {
     background-image: url("../resources/images/dh-background.png");
+    background-image: url("./resources/images/dh-foreground-alpha.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
     overflow: hidden;
+}
+
+#foregrnd {
+    background-image: url("../resources/images/dh-background.png");
+    background-image: url("./resources/images/dh-foreground-alpha.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+
+div {
+    width: 200px;
 }
 
 /* cursor */
@@ -14,6 +29,20 @@ html {
 }
 
 /* Data Bar */
+
+.score-box {
+    border: solid;
+    padding: 5px;
+    border-width: 5px;
+    border-color: black;
+}
+
+.bullet-box {
+    border: solid;
+    padding: 5px;
+    border-width: 5px;
+    border-color: black;
+}
 
 #score, #bullets {
     position: absolute;
@@ -27,12 +56,21 @@ html {
     left: 40px;
 }
 
+.blt {
+    transform: rotate(270deg) scale(8%);
+}
+
+#blt1, #blt2, #blt3, #blt4, #blt5, #blt6, #blt7, #blt8 {
+    left: 20px;
+    bottom: 40px;
+}
+
 /* Birds */
 
 .bird-size {
     width: 119px;
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
 }
 
 #b1 {
