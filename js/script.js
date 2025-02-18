@@ -24,7 +24,7 @@ function shoot(bird) {
 
 
 function GamePlay () {
-    window.open("./index.html");
+    window.open("./index.html", "_self");
 }
 function play() {
     document.getElementById("quack").play();

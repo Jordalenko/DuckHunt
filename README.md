@@ -101,6 +101,10 @@ Wave flagged errors for no text on social media links (disregarded).
 
  Solution: I created a new foreground image by cropping the background image and then, with the help of a tutor, I applied absolute positioning and left, right and bottom coordinates of 0 to add it over the bottom third of the background.
 
+- In order to delay the flight of the birds once the game is launched I added a 2000ms setTimeout to game launch (https://stackoverflow.com/questions/16873889/how-to-create-javascript-delay-function) and I added various animation delays to the animations (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay).
+
+- in order to open the game in the same window as the game start page I added "_self" to the window.open method (https://stackoverflow.com/questions/43395782/open-new-html-page-in-the-same-tab-via-javascript#:~:text=You%20have%20to%20quote%20the,)%3B%20this%20code%20should%20work.).
+
 
 
 ### Known Issues
