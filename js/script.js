@@ -26,6 +26,7 @@ function shoot(bird) {
 function GamePlay () {
     window.open("./game.html", "_self");
 }
+
 function play() {
     document.getElementById("quack").play();
     setTimeout(GamePlay, 2000)
