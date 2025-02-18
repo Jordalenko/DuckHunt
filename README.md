@@ -101,7 +101,7 @@ Wave flagged errors for no text on social media links (disregarded).
 
  Problem: How to recreate the foreground without an alpha that obsucred the area of gameplay.
 
- Solution: I created a new foreground image by cropping the background image and then, with the help of a tutor, I applied absolute positioning and left, right and bottom coordinates of 0 to add it over the bottom third of the background.
+ Solution: I created a new foreground image by cropping the background image and then, with the help of a tutor, I applied absolute positioning and left, right and bottom coordinates of 0 to add it over the bottom third of the background. Note: This solution provides cover for the ducks when they exit game play and return to the start position.
 
 - In order to delay the flight of the birds once the game is launched I added a 2000ms setTimeout to game launch (https://stackoverflow.com/questions/16873889/how-to-create-javascript-delay-function) and I added various animation delays to the animations (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay).
 
