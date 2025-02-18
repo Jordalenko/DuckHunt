@@ -87,6 +87,22 @@ Wave flagged errors for no text on social media links (disregarded).
 
 ### Issues and resolutions
 
+- The first problem I encountered was how to obscure the ducks behind the grass. In this case I decided to use a layer over the bottom third of the bacground image and duck images. This way when the ducks flew they would appear to come from in the grass. 
+
+ A. The first attempt was to use a file matching the background but with an alpha channel where the sky was so the ducks and the background would show through the alpha channel in the foreground image.
+
+ Problem: How to assign z-index to each layer and size them so the foreground matched over the background.
+
+ Solution: I worked with my tutor to create a section for the fg layer, which I assigned a z-index value of 1.
+
+ B. The solution to problem A worked visually but players could not shoot the ducks. Although the ducks were visible they were effectively behind the fg layer's z-index.
+
+ Problem: How to recreate the foreground without an alpha that obsucred the area of gameplay.
+
+ Solution: I created a new foreground image by cropping the background image and then, with the help of a tutor, I applied absolute positioning and left, right and bottom coordinates of 0 to add it over the bottom third of the background.
+
+
+
 ### Known Issues
 
 ---
@@ -107,6 +123,8 @@ In order to deploy the [repository](https://jordalenko.github.io/DuckHunt/) from
 ### Content
 
 Image Sources:
+
+game start page image was sourced from (https://medium.com/everything-80s/the-story-of-duck-hunt-the-original-backbone-of-the-nes-6d4b18c0ff89)
 
 background image was sourced from [repository] (https://github.com/vaielab/DuckHuntCss/blob/master/stage.png)
 
