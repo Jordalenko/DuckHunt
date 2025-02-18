@@ -87,6 +87,8 @@ Wave flagged errors for no text on social media links (disregarded).
 
 ### Issues and resolutions
 
+- In searching for an existing workflow I found this YouTube video (https://www.youtube.com/watch?v=v6QUZ5veMlA) and began to search for gifs to use (see content section below).
+
 - The first problem I encountered was how to obscure the ducks behind the grass. In this case I decided to use a layer over the bottom third of the bacground image and duck images. This way when the ducks flew they would appear to come from in the grass. 
 
  A. The first attempt was to use a file matching the background but with an alpha channel where the sky was so the ducks and the background would show through the alpha channel in the foreground image.
