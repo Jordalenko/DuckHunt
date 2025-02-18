@@ -136,5 +136,7 @@ Sound Sources:
 
 Bullet sound effects were sourced from (https://pixabay.com/sound-effects/search/bullet/).
 
+Duck sound effects were sourced from (https://pixabay.com/sound-effects/search/quack/)
+
 ### Acknowledgements
 

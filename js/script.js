@@ -21,3 +21,12 @@ function shoot(bird) {
                 }
         } 
     }
+
+
+function GamePlay () {
+    window.open("./index.html");
+}
+function play() {
+    document.getElementById("quack").play();
+    setTimeout(GamePlay, 2000)
+    }

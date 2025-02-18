@@ -27,24 +27,29 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="start-page">
+<body class="container start-page">
 
 
 
 <!-- ducks -->
 <img class="game-logo" src="./resources/images/dh-game-start-v2.webp" alt="Game Start Page">
 
-<section class="start-button">
+<section class="container start-button">
 
 <!-- start button -->
 
-    <div class="game-start" id="start-game">
-        <a
+    <div class="container game-start" id="start-game">
+       <!-- <a
         class="btn"
         href="./index.html"
         role="button"
+        type="button"
+        onclick="play()"
+        value="PLAY"
         >Start Game</a
-      >
+      > -->
+
+      <input type="button" class="btn" onclick="play()" value="Start Game">
     </div>
 
     <!--  -->
@@ -55,6 +60,7 @@
 
 <!-- audio -->
 
+<audio src="./resources/audio/duck-quack.m4a" id="quack"></audio>
 
     <script src="./js/script.js" type="text/javascript"></script>
 </body>

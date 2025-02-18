@@ -110,12 +110,14 @@ html {
 #b1 {
     right: 90%;
     animation-name: bird1;
+    animation-delay: 1000ms;
     animation-duration: 5.5s;
 }
 
 #b2 {
     left: 90%;
     animation-name: bird2;
+    animation-delay: 1000ms;
     animation-duration: 4.9s;
     transform: rotateY(180deg);
 }
@@ -123,12 +125,14 @@ html {
 #b3 {
     right: 80%;
     animation-name: bird3;
+    animation-delay: 1000ms;
     animation-duration: 7s;
 }
 
 #b4 {
     left: 80%;
     animation-name: bird4;
+    animation-delay: 2000ms;
     animation-duration: 7s;
     transform: rotateY(180deg);
 }
@@ -136,12 +140,14 @@ html {
 #b5 {
     right: 70%;
     animation-name: bird5;
+    animation-delay: 2500ms;
     animation-duration: 6s;
 }
 
 #b6 {
     left: 70%;
     animation-name: bird6;
+    animation-delay: 2500ms;
     animation-duration: 6s;
     transform: rotateY(180deg);
 }
@@ -149,13 +155,15 @@ html {
 #b7 {
     right: 60%;
     animation-name: bird7;
-    animation-duration: 9s;
+    animation-delay: 3000ms;
+    animation-duration: 7s;
 }
 
 #b8 {
     left: 60%;
     animation-name: bird8;
-    animation-duration: 9s;
+    animation-delay: 3000ms;
+    animation-duration: 7s;
     transform: rotateY(180deg);
 }
 
