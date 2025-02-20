@@ -27,60 +27,61 @@
     <!-- css stylesheet -->
 
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
-<body class="container game-page">
-
-<!--  <section class="backgrnd"> -->
+<body>
 
 <!-- ducks -->
 
-    <img id="b1" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-    <img id="b2" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-    <img id="b3" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-    <img id="b4" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-    <img id="b5" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-    <img id="b6" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-    <img id="b7" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-    <img id="b8" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+<div class="col-12 text-center">
+    <div class="card-deck">
+      <div class="card">
+        <img
+          src="./resources/images/dh-background.png"
+          class="card-img-top bottom-img"
+          alt="duck hunt game"        
+        />
+        <img id="b1" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b2" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b3" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b4" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b5" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b6" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b7" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b8" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img 
+            src="./resources/images/dh-foreground-v4.png" 
+            class="top-img"
+            alt="foreground lower third"
+        />
 
-<!--  </section> -->
+        <!-- score and bullet icon boxes -->
 
-<section class="container foregrnd">
-
-<!-- score and bullet icon boxes -->
-
-    <div class="score-box" id="score">Score: <span id="currentScore">0</span></div>
-
-    <!-- duck Icons -->
-
-    <div class="bullet-box" id="bullets">Bullets: <span id="currentBullets">8</span>
-
-     <!-- Bullet Icons
-
-    <img id="blt1" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
-    <img id="blt2" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
-    <img id="blt3" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
-    <img id="blt4" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
-    <img id="blt5" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
-    <img id="blt6" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
-    <img id="blt7" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
-    <img id="blt8" class="blt" src="./resources/images/bullet/projectile.png" alt="bullet icon">
-    
-    -->
-
+        <img 
+            src="./resources/images/hits.png" 
+            alt="duck hit tracker"
+            class="score-box"
+            id="score"
+        />
+        <img 
+            src="./resources/images/bullet/shot-box.png" 
+            alt="duck hit tracker"
+            class="bullet-box"
+            id="bullets"
+        />
+      </div>
     </div>
+  </div>
 
-</section>
+
 
 <!-- audio -->
 
     <audio src="./resources/audio/bullet-hit-v2.m4a" id="hit"></audio>
-    <audio src="./resources/audio/bullet-hit-v2.m4a" id="hit-2"></audio>
     <audio src="./resources/audio/bullet-miss-v2.m4a" id="miss"></audio>
-    <audio src="./resources/audio/bullet-miss-v2.m4a" id="miss-2"></audio>
 
 
-    <script src="./js/script.js" type="text/javascript"></script>
+  <script src="./js/script.js" type="text/javascript"></script>
 </body>
 </html>
