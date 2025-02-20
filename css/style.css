@@ -7,6 +7,23 @@ body {
     width: 100vh;
 }
 
+.card-body {
+    padding: 0;
+}
+
+/* start page */
+
+.btn {
+    font-size: 10px;
+    font: black;
+    border: solid;
+    box-sizing; content:
+    border-width: 1px;
+    padding: 2px;
+}
+
+/* game play */
+
 .bottom-img {
     position: relative;
     z-index: 0;
@@ -26,15 +43,6 @@ body {
     right: 0;
 }
 
-/* start page */
-
-.btn {
-    font-size: 20px;
-    font: black;
-    border: solid;
-    border-width: 2px;
-}
-
 /* cursor */
 
 html {
@@ -42,7 +50,7 @@ html {
     z-index: 1;
 }
 
-/* score & bullet tracker */
+/* score & bullet tracker
 
 .score-box {
     position: absolute;
@@ -60,20 +68,11 @@ html {
     height: 8%;
     bottom: 2%;
     left: 0;
+}  */
+
+#bullets, #score {
+    z-index: 1;
 }
-
-#score, #bullets {
-
-}
-
-/* .blt {
-    transform: rotate(270deg) scale(8%);
-}
-
-#blt1, #blt2, #blt3, #blt4, #blt5, #blt6, #blt7, #blt8 {
-    left: 20px;
-    bottom: 40px;
-} */
 
 /* Birds */
 
@@ -206,4 +205,8 @@ html {
     40% {left: 40%; bottom: 70%}
     70% {left: 20%; bottom: 35%}
     100% {left: -20%; bottom: 100%}
+}
+
+@media (max-width: 320px) {
+    
 }

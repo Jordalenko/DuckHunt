@@ -40,25 +40,34 @@
         <img
           src="./resources/images/dh-background.png"
           class="card-img-top bottom-img"
+          id="backgrnd"
           alt="duck hunt game"        
         />
-        <img id="b1" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-        <img id="b2" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-        <img id="b3" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-        <img id="b4" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-        <img id="b5" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-        <img id="b6" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-        <img id="b7" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
-        <img id="b8" onclick="shoot(this)" class="bird-size" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b1" onclick="shoot(this)" class="bird-size bird" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b2" onclick="shoot(this)" class="bird-size bird" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b3" onclick="shoot(this)" class="bird-size bird" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b4" onclick="shoot(this)" class="bird-size bird" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b5" onclick="shoot(this)" class="bird-size bird" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b6" onclick="shoot(this)" class="bird-size bird" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b7" onclick="shoot(this)" class="bird-size bird" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
+        <img id="b8" onclick="shoot(this)" class="bird-size bird" src="./resources/gifs/birds/duck1.gif" alt="duck flying">
         <img 
             src="./resources/images/dh-foreground-v4.png" 
             class="top-img"
             alt="foreground lower third"
         />
 
+        <!-- TEMP score and bullet icon boxes -->
+
+        <div id="bullets"><span id="currentBullets">8</span>
+        </div>
+
+        <div id="score"><span id="currentScore">0</span>
+        </div>
+
         <!-- score and bullet icon boxes -->
 
-        <img 
+        <!-- <img 
             src="./resources/images/hits.png" 
             alt="duck hit tracker"
             class="score-box"
@@ -69,7 +78,7 @@
             alt="duck hit tracker"
             class="bullet-box"
             id="bullets"
-        />
+        /> -->
       </div>
     </div>
   </div>
@@ -78,7 +87,7 @@
 
 <!-- audio -->
 
-    <audio src="./resources/audio/bullet-hit-v2.m4a" id="hit"></audio>
+    <audio src="./resources/audio/bullet-hit-v3.m4a" id="hit"></audio>
     <audio src="./resources/audio/bullet-miss-v2.m4a" id="miss"></audio>
 
 
