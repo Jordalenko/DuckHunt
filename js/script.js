@@ -7,7 +7,7 @@ function scoring() {
 
 function shoot(bird) {
     if (bullets > 0) {
-        scoring()
+        /* scoring() */
         bird.style.display = "none";
         document.getElementById("hit").play();
     }
@@ -16,7 +16,7 @@ function shoot(bird) {
     window.onclick = function(e) {
         bullets--;
         if (bullets >= 0) {
-            document.getElementById("currentBullets").innerHTML = `Bullets: ${bullets}`;
+            /* document.getElementById("currentBullets").innerHTML = `Bullets: ${bullets}`; */
         if(e.target.class !== "bird") {
                 document.getElementById("miss").play();
             }

@@ -50,7 +50,7 @@ html {
     z-index: 1;
 }
 
-/* score & bullet tracker
+/* score & bullet tracker */
 
 .score-box {
     position: absolute;
@@ -68,10 +68,6 @@ html {
     height: 8%;
     bottom: 2%;
     left: 0;
-}  */
-
-#bullets, #score {
-    z-index: 1;
 }
 
 /* Birds */
