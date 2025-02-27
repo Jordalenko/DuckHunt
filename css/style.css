@@ -203,6 +203,35 @@ html {
     100% {left: -20%; bottom: 100%}
 }
 
-@media (max-width: 320px) {
-    
+@media (min-width: 320px) {
+    .btn {
+        font-size: 10px;
+        font: black;
+        border: solid;
+        box-sizing; content:
+        border-width: 1px;
+        padding: 2px;
+    }
+}
+
+@media (min-width: 576px) {
+    .btn {
+        font-size: 20px;
+        font: black;
+        border: solid;
+        box-sizing; content:
+        border-width: 2px;
+        padding: 1px;
+    }
+}
+
+@media (min-width: 878px) {
+    .btn {
+        font-size: 28px;
+        font: black;
+        border: solid;
+        box-sizing; content:
+        border-width: 2px;
+        padding: 1px;
+    }
 }
