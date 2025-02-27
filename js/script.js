@@ -37,6 +37,6 @@ function GamePlay() {
 
 function gameStart() {
     document.getElementById("quack").play();
-    setTimeout(GamePlay, 2000);
-    setTimeout(GameOver, 8000);
+    setTimeout(GamePlay, 1000);
+    setTimeout(GameOver, 9000);
 }
