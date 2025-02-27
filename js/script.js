@@ -21,9 +21,10 @@ function shoot(bird) {
                 document.getElementById("miss").play();
             }
         } else if (bullets == -1) {
-                setTimeout(GameOver, 2000)
+                setTimeout(GameOver, 2000);
         }
     }
+
  
 
 function GameOver() {
@@ -34,7 +35,8 @@ function GamePlay() {
     window.open("./game.html", "_self");
 }
 
-function play() {
+function gameStart() {
     document.getElementById("quack").play();
-    setTimeout(GamePlay, 2000)
-    }
+    setTimeout(GamePlay, 2000);
+    setTimeout(GameOver, 8000);
+}
