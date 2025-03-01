@@ -24,12 +24,12 @@ function gameRestart() {
 }
 
 function scoring() {
-    document.getElementById("currentScore").innerHTML = `Score: ${++count}`;
+    document.getElementById("currentScore").innerHTML = ++count;
 }
 
 function shoot(bird) {
     if (bullets > 0) {
-        /* scoring() */
+        scoring()
         bird.style.display = "none";
         document.getElementById("hit").play();
         setTimeout(() => {
@@ -39,9 +39,9 @@ function shoot(bird) {
 }
 
     window.onclick = function(e) {
-        bullets--;
-        if (bullets >= 0) {
-            /* document.getElementById("currentBullets").innerHTML = `Bullets: ${bullets}`; */
+        if (bullets > 0) {
+            bullets--;
+            document.getElementById("currentBullets").innerHTML = bullets;
         if(e.target.class !== "bird") {
                 document.getElementById("miss").play();
                 setTimeout(() => {

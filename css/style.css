@@ -52,7 +52,35 @@ html {
 
 /* score & bullet tracker */
 
-.score-box {
+/* #currentBullets {
+    z-index: 1;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+#currentScore  {
+    z-index: 1;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+} */
+
+#bullets {
+    z-index: 1;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+#score  {
+    z-index: 1;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* .score-box {
     position: absolute;
     z-index: 1;
     width: 25%;
@@ -68,7 +96,7 @@ html {
     height: 8%;
     bottom: 2%;
     left: 0;
-}
+}  */
 
 /* Birds */
 
