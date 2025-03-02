@@ -22,6 +22,7 @@ body {
     padding: 2px;
 }
 
+
 /* game play */
 
 .bottom-img {
@@ -38,7 +39,7 @@ body {
     z-index: 1;
     width: 100%;
     height: 27%;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     right: 0;
 }
@@ -55,22 +56,27 @@ html {
 #bullets {
     z-index: 1;
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    font-size: small;
+    bottom: 5px;
+    left: 10px;
 }
 
 #score  {
     z-index: 1;
     position: absolute;
-    bottom: 8px;
-    right: 16px;
+    font-size: small;
+    bottom: 5px;
+    right: 10px;
 }
 
-#endScore  {
+#endScore {
     z-index: 1;
     position: absolute;
-    bottom: 50%;
-    right: 43%;
+    bottom: 49%;
+    right: 32%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bolder;
 }
 
 /* Birds */
@@ -206,7 +212,26 @@ html {
     100% {left: -20%; bottom: 100%}
 }
 
-@media (min-width: 320px) {
+/* screen sizes */
+
+@media (min-width: 240px) {
+
+    #bullets {
+        z-index: 1;
+        position: absolute;
+        font-size: small;
+        bottom: 5px;
+        left: 10px;
+    }
+    
+    #score  {
+        z-index: 1;
+        position: absolute;
+        font-size: small;
+        bottom: 5px;
+        right: 10px;
+    }
+
     .btn {
         font-size: 10px;
         font: black;
@@ -215,9 +240,36 @@ html {
         border-width: 1px;
         padding: 2px;
     }
+
+    #endScore {
+        z-index: 1;
+        position: absolute;
+        bottom: 49%;
+        right: 32%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        font-weight: bolder;
+    }
 }
 
 @media (min-width: 576px) {
+
+    #bullets {
+        z-index: 1;
+        position: absolute;
+        font-size: medium;
+        bottom: 10px;
+        left: 16px;
+    }
+    
+    #score  {
+        z-index: 1;
+        position: absolute;
+        font-size: medium;
+        bottom: 10px;
+        right: 16px;
+    }
+
     .btn {
         font-size: 20px;
         font: black;
@@ -226,9 +278,36 @@ html {
         border-width: 2px;
         padding: 1px;
     }
+
+    #endScore {
+        z-index: 1;
+        position: absolute;
+        bottom: 49%;
+        right: 36%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        font-weight: bolder;
+    }
 }
 
-@media (min-width: 878px) {
+@media (min-width: 768px) {
+
+    #bullets {
+        z-index: 1;
+        position: absolute;
+        font-size: large;
+        bottom: 10px;
+        left: 16px;
+    }
+    
+    #score  {
+        z-index: 1;
+        position: absolute;
+        font-size: large;
+        bottom: 10px;
+        right: 16px;
+    }
+
     .btn {
         font-size: 28px;
         font: black;
@@ -236,5 +315,167 @@ html {
         box-sizing; content:
         border-width: 2px;
         padding: 1px;
+    }
+
+    #endScore {
+        z-index: 1;
+        position: absolute;
+        bottom: 48%;
+        right: 35%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: bolder;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #bullets {
+        z-index: 1;
+        position: absolute;
+        font-size: x-large;
+        bottom: 10px;
+        left: 16px;
+    }
+    
+    #score  {
+        z-index: 1;
+        position: absolute;
+        font-size: x-large;
+        bottom: 10px;
+        right: 16px;
+    }
+
+    .btn {
+        font-size: 32px;
+        font: black;
+        border: solid;
+        box-sizing; content:
+        border-width: 2px;
+        padding: 1px;
+    }
+
+    #endScore {
+        z-index: 1;
+        position: absolute;
+        bottom: 48%;
+        right: 35%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 42px;
+        font-weight: bolder;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #bullets {
+        z-index: 1;
+        position: absolute;
+        font-size: xx-large;
+        bottom: 10px;
+        left: 16px;
+    }
+    
+    #score  {
+        z-index: 1;
+        position: absolute;
+        font-size: xx-large;
+        bottom: 10px;
+        right: 16px;
+    }
+
+    .btn {
+        font-size: 36px;
+        font: black;
+        border: solid;
+        box-sizing; content:
+        border-width: 2px;
+        padding: 1px;
+    }
+
+    #endScore {
+        z-index: 1;
+        position: absolute;
+        bottom: 47%;
+        right: 35%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 55px;
+        font-weight: bolder;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    #bullets {
+        z-index: 1;
+        position: absolute;
+        font-size: 35px;
+        bottom: 10px;
+        left: 16px;
+    }
+    
+    #score  {
+        z-index: 1;
+        position: absolute;
+        font-size: 35px;
+        bottom: 10px;
+        right: 16px;
+    }
+
+    .btn {
+        font-size: 38px;
+        font: black;
+        border: solid;
+        box-sizing; content:
+        border-width: 2px;
+        padding: 1px;
+    }
+
+    #endScore {
+        z-index: 1;
+        position: absolute;
+        bottom: 47%;
+        right: 35%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        font-weight: bolder;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    #bullets {
+        z-index: 1;
+        position: absolute;
+        font-size: 55px;
+        bottom: 10px;
+        left: 26px;
+    }
+    
+    #score  {
+        z-index: 1;
+        position: absolute;
+        font-size: 55px;
+        bottom: 10px;
+        right: 26px;
+    }
+
+    .btn {
+        font-size: 42px;
+        font: black;
+        border: solid;
+        box-sizing; content:
+        border-width: 2px;
+        padding: 1px;
+    }
+
+    #endScore {
+        z-index: 1;
+        position: absolute;
+        bottom: 47%;
+        right: 35%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 80px;
+        font-weight: bolder;
     }
 }

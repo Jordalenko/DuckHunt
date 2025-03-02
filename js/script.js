@@ -5,6 +5,23 @@ let count = 0;
 
 /* score lists */
 
+/* localStorage.setItem("finalTally", "7");
+
+var finalTally = localStorage.getItem("finalTally"); */
+
+/* function set_LocalStorage(finalScore) {
+ //localStorage.setItem("name of variable", "value to store");
+   localStorage.setItem(finalScore);
+   console.log(finalScore);
+}
+
+function get_LocalStorage(finalScore) {
+  return localStorage.getItem(finalScore);
+  console.log(finalScore);
+}
+
+*/
+
 /* const localStorageScoreKey = score.lists
 let lists = JSON.parse(localStorage.getItem(localStorageScoreKey)) || []
 
@@ -21,28 +38,34 @@ function save() {
 /* game over */
 
 function gameOver() {
-    window.open("./game-over.html", "_self")
+    window.open("./game-over.html", "_self");
+    /* scores(); */
 } 
+
+/* function scores() {
+    document.getElementById("finalScore").innerHTML = finalTally;
+} */
 
 /* game start */
 
 function gamePlay() {
-    window.open("./game.html", "_self");
+    window.open("./game.html", "_self", "gameOnText()");
 }
 
 function gameStart() {
     setTimeout(() => {
         gamePlay();
-      }, "2000");
+      }, "1200");
     document.getElementById("quack").play();
 }
 
 /* game restart */
 
 function gameRestart() {
+
     setTimeout(() => {
         gamePlay();
-      }, "2000");
+      }, "1500");
     document.getElementById("quack").play();
 }
 
@@ -75,6 +98,7 @@ function shoot(bird) {
         if (bullets > 0) {
             bullets--;
             document.getElementById("currentBullets").innerHTML = bullets;
+        
         if(e.target.class !== "bird") {
                 /* missScoring(); */
                 document.getElementById("miss").play();
