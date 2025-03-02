@@ -7,7 +7,7 @@
 
 ---
 
-To engage gamers.
+To engage gamers with a fun javascript hunting game.
 
 The client have offered the following guidance for the new site.
 
@@ -108,6 +108,8 @@ Wave flagged errors for no text on social media links (disregarded).
 - in order to open the game in the same window as the game start page I added "_self" to the window.open method (https://stackoverflow.com/questions/43395782/open-new-html-page-in-the-same-tab-via-javascript#:~:text=You%20have%20to%20quote%20the,)%3B%20this%20code%20should%20work.).
 
 - in order to scope the project properly I abandoned the graphical displays for bullet and score counters. I re-integrated my text counters and solved the issue where the divs for the counters pushed the foreground layer down. I used this w3 link to position the divs over the image properly. https://www.w3schools.com/howto/howto_css_image_text.asp
+
+- Add scoring function to remove a point for missed shots.
 
 
 
