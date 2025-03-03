@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM fully loaded and parsed");
+  });
+
 const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
 const b3 = document.getElementById("b3");
@@ -78,7 +82,7 @@ window.onclick = function(e) {
         } else if (bullets == -1) {
                 setTimeout(gameOver, 2000);
         }
-}
+};
 
 /* game scoring */
           
