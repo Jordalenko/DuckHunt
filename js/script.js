@@ -7,47 +7,11 @@ const startGame = document.getElementById("startButton");
 
 startGame.addEventListener("click", gameStart);
 
-/* local storage score lists */
+const restartGame = document.getElementById("gameEnd")
 
-/* localStorage.setItem("finalTally", "7");
-
-var finalTally = localStorage.getItem("finalTally"); */
-
-/* function set_LocalStorage(finalScore) {
- //localStorage.setItem("name of variable", "value to store");
-   localStorage.setItem(finalScore);
-   console.log(finalScore);
-}
-
-function get_LocalStorage(finalScore) {
-  return localStorage.getItem(finalScore);
-  console.log(finalScore);
-}
-
-*/
-
-/* const localStorageScoreKey = score.lists
-let lists = JSON.parse(localStorage.getItem(localStorageScoreKey)) || []
-
-function saveAndRender() {
-    save()
-    render()
-}
-
-function save() {
-    localStorage.setItem(localStorageScoreKey, JSON.stringify(lists))
-}
-*/
-
-/* function scores() {
-    document.getElementById("finalScore").innerHTML = finalTally;
-} */
+restartGame.addEventListener("click", gameRestart())
 
 /* game start */
-
-function gamePlay() {
-    window.open("./game.html", "_self");
-}
 
 function gameStart() {
     setTimeout(() => {
@@ -56,11 +20,15 @@ function gameStart() {
     document.getElementById("quack").play();
 }
 
+function gamePlay() {
+    window.open("./game.html", "_self");
+}
+
 /* game over */
 
 function gameOver() {
     window.open("./game-over.html", "_self");
-} 
+}
 
 /* game restart */
 
@@ -113,3 +81,35 @@ function shoot(bird) {
                 setTimeout(gameOver, 2000);
         }
     };
+
+    /* local storage score lists */
+
+/* localStorage.setItem("finalTally", "7");
+
+var finalTally = localStorage.getItem("finalTally"); */
+
+/* function set_LocalStorage(finalScore) {
+ //localStorage.setItem("name of variable", "value to store");
+   localStorage.setItem(finalScore);
+   console.log(finalScore);
+}
+
+function get_LocalStorage(finalScore) {
+  return localStorage.getItem(finalScore);
+  console.log(finalScore);
+}
+
+*/
+
+/* const localStorageScoreKey = score.lists
+let lists = JSON.parse(localStorage.getItem(localStorageScoreKey)) || []
+
+function saveAndRender() {
+    save()
+    render()
+}
+
+function save() {
+    localStorage.setItem(localStorageScoreKey, JSON.stringify(lists))
+}
+*/
