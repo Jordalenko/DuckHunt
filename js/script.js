@@ -83,7 +83,7 @@ function scoring() {
 
 function shoot(bird) {
     if (bullets > 0) {
-        scoring()
+        scoring();
         bird.style.display = "none";
         document.getElementById("hit").play();
         setTimeout(() => {
@@ -109,4 +109,4 @@ function shoot(bird) {
         } else if (bullets == -1) {
                 setTimeout(gameOver, 2000);
         }
-    }
+    };
