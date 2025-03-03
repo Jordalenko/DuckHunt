@@ -35,8 +35,7 @@ body {
     border: solid;
     box-sizing; content:
     border-width: 1px;
-    padding: 5px 40px;
-    position: fixed;
+    padding: 2px;
 }
 
 /* game play */
@@ -106,28 +105,28 @@ html {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    object-fit: scale-down;
     object-position: top;
 }
 
 #restartButton {
     position: fixed;
-    bottom: 50%;
+    bottom: 84%;
     background: white;
-    width: 210px;
-    left: calc(50% - 97px);
+    width: 110px;
+    left: calc(50% - 50px);
 }
 
 #endGame {
     position: fixed;
-    bottom: 20%;
+    font-size: 10px;
+    bottom: 88%;
     background: black;
-    font: white;
-    width: 210px;
-    border-radius: 10px;
-    left: calc(50% - 97px);
+    color: white;
+    width: 110px;
+    border-radius: 20px;
+    left: calc(50% - 50px);
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
 }
 
 /* Birds */
@@ -308,14 +307,31 @@ html {
         padding: 2px;
     }
 
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: scale-down;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 84%;
+        background: white;
+        width: 110px;
+        left: calc(50% - 50px);
+    }
+    
     #endGame {
         position: fixed;
-        bottom: 15%;
+        font-size: 10px;
+        bottom: 88%;
         background: black;
         color: white;
-        width: 210px;
+        width: 110px;
         border-radius: 10px;
-        left: calc(50% - 97px);
+        left: calc(50% - 50px);
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bolder;
     }
@@ -364,16 +380,32 @@ html {
         padding: 2px;
     }
 
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: scale-down;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 78%;
+        background: white;
+        width: 110px;
+        left: calc(50% - 50px);
+    }
+    
     #endGame {
         position: fixed;
-        bottom: 15%;
+        font-size: 16px;
+        bottom: 84%;
         background: black;
         color: white;
-        width: 210px;
+        width: 110px;
         border-radius: 10px;
-        left: calc(50% - 97px);
+        left: calc(50% - 50px);
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
     }
 }
 
@@ -420,17 +452,32 @@ html {
         padding: 1px;
     }
 
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: scale-down;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 70%;
+        background: white;
+        width: 160px;
+        left: calc(50% - 67px);
+    }
+    
     #endGame {
         position: fixed;
-        bottom: 15%;
+        font-size: 24px;
+        bottom: 76%;
         background: black;
         color: white;
-        width: 210px;
-        font-size: x-large;
+        width: 160px;
         border-radius: 10px;
-        left: calc(50% - 97px);
+        left: calc(50% - 67px);
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
     }
 }
 
@@ -440,7 +487,7 @@ html {
         position: fixed;
         width: 100vw;
         height: 100vh;
-        object-fit: contain;
+        object-fit: scale-down;
         object-position: top;
     }
     
@@ -477,22 +524,53 @@ html {
         padding: 1px;
     }
 
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: scale-down;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 50%;
+        background: white;
+        width: 210px;
+        left: calc(50% - 97px);
+    }
+    
     #endGame {
         position: fixed;
-        bottom: 15%;
+        font-size: 38px;
+        bottom: 59%;
         background: black;
         color: white;
-        width: 310px;
-        font-size: 40px;
+        width: 210px;
         border-radius: 10px;
-        left: calc(50% - 155px);
+        left: calc(50% - 97px);
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
     }
 }
 
 @media (min-width: 992px) {
 
+    #startIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    #startButton {
+        position: fixed;
+        bottom: 50%;
+        background: white;
+        width: 210px;
+        left: calc(50% - 97px);
+    }
+    
     #bullets {
         z-index: 1;
         position: absolute;
@@ -518,22 +596,69 @@ html {
         padding: 1px;
     }
 
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: scale-down;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 70%;
+        background: white;
+        width: 160px;
+        left: calc(50% - 67px);
+    }
+    
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: scale-down;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 40%;
+        background: white;
+        width: 210px;
+        left: calc(50% - 97px);
+    }
+    
     #endGame {
         position: fixed;
-        bottom: 15%;
+        font-size: 38px;
+        bottom: 50%;
         background: black;
         color: white;
-        width: 400px;
-        font-size: 40px;
+        width: 210px;
         border-radius: 10px;
-        left: calc(50% - 190px);
+        left: calc(50% - 97px);
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
     }
 }
 
 @media (min-width: 1200px) {
 
+    #startIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        object-position: top;
+    }
+    
+    #startButton {
+        position: fixed;
+        bottom: 50%;
+        background: white;
+        width: 210px;
+        left: calc(50% - 97px);
+    }
+    
     #bullets {
         z-index: 1;
         position: absolute;
@@ -551,7 +676,7 @@ html {
     }
 
     .btn {
-        font-size: 46px;
+        font-size: 40px;
         font: black;
         border: solid;
         box-sizing; content:
@@ -559,17 +684,32 @@ html {
         padding: 1px;
     }
 
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 40%;
+        background: white;
+        width: 210px;
+        left: calc(50% - 97px);
+    }
+    
     #endGame {
         position: fixed;
-        bottom: 15%;
+        font-size: 38px;
+        bottom: 50%;
         background: black;
         color: white;
-        width: 500px;
-        font-size: 40px;
+        width: 210px;
         border-radius: 10px;
-        left: calc(50% - 230px);
+        left: calc(50% - 97px);
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
     }
 }
 
@@ -592,7 +732,7 @@ html {
     }
 
     .btn {
-        font-size: 38px;
+        font-size: 40px;
         font: black;
         border: solid;
         box-sizing; content:
@@ -600,17 +740,32 @@ html {
         padding: 1px;
     }
 
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 36%;
+        background: white;
+        width: 210px;
+        left: calc(50% - 97px);
+    }
+    
     #endGame {
         position: fixed;
-        bottom: 15%;
+        font-size: 38px;
+        bottom: 45%;
         background: black;
         color: white;
-        width: 500px;
-        font-size: 50px;
+        width: 210px;
         border-radius: 10px;
-        left: calc(50% - 230px);
+        left: calc(50% - 97px);
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
     }
 }
 
@@ -641,16 +796,31 @@ html {
         padding: 5px;
     }
 
+    #endIMG {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        object-position: top;
+    }
+    
+    #restartButton {
+        position: fixed;
+        bottom: 37%;
+        background: white;
+        width: 270px;
+        left: calc(50% - 123px);
+    }
+    
     #endGame {
         position: fixed;
-        bottom: 15%;
+        font-size: 48px;
+        bottom: 46%;
         background: black;
         color: white;
-        width: 800px;
-        font-size: 70px;
+        width: 270px;
         border-radius: 10px;
-        left: calc(50% - 230px);
+        left: calc(50% - 123px);
         font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
     }
 }
