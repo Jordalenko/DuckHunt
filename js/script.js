@@ -3,7 +3,11 @@
 let bullets = 8;
 let count = 0;
 
-/* score lists */
+const startGame = document.getElementById("startButton");
+
+startGame.addEventListener("click", gameStart);
+
+/* local storage score lists */
 
 /* localStorage.setItem("finalTally", "7");
 
@@ -35,13 +39,6 @@ function save() {
 }
 */
 
-/* game over */
-
-function gameOver() {
-    window.open("./game-over.html", "_self");
-    /* scores(); */
-} 
-
 /* function scores() {
     document.getElementById("finalScore").innerHTML = finalTally;
 } */
@@ -49,7 +46,7 @@ function gameOver() {
 /* game start */
 
 function gamePlay() {
-    window.open("./game.html", "_self", "gameOnText()");
+    window.open("./game.html", "_self");
 }
 
 function gameStart() {
@@ -58,6 +55,12 @@ function gameStart() {
       }, "1200");
     document.getElementById("quack").play();
 }
+
+/* game over */
+
+function gameOver() {
+    window.open("./game-over.html", "_self");
+} 
 
 /* game restart */
 
