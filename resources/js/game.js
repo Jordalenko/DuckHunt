@@ -1,6 +1,10 @@
+/* confirm dom loading */
+
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
 });
+
+/* variables for event listeners */
 
 const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
@@ -13,6 +17,19 @@ const b8 = document.getElementById("b8");
 const currentScoreDisplay = document.getElementById("currentScore");
 const bulletCounter = document.getElementById("currentBullets");
 
+/* local storage */
+
+/* Example of saving a new high score
+// const newScore = { name: “Player1”, score: 8 };
+// Retrieve existing high scores
+// const highScores = JSON.parse(localStorage.getItem(“highScores”)) || [];
+// Add the new score
+// highScores.push(newScore);
+// Save back to localStorage
+// localStorage.setItem(“highScores”, JSON.stringify(highScores)); */
+
+/* event listeners */
+
 b1.addEventListener("click", shoot);
 b2.addEventListener("click", shoot);
 b3.addEventListener("click", shoot);
@@ -21,6 +38,7 @@ b5.addEventListener("click", shoot);
 b6.addEventListener("click", shoot);
 b7.addEventListener("click", shoot);
 b8.addEventListener("click", shoot);
+/* getFinalScore.addEventListener("click", getScore); */
 
 /* variable starting values */
 
@@ -43,7 +61,7 @@ window.onclick = function (e) {
       gameOver();
     }, 9000);
   }
-  if (e.target.classList.contains("bird")) {
+  if (bullets > 0 && e.target.classList.contains("bird")) {
     console.log("hit");
     document.getElementById("hit").play();
     scoring();
@@ -70,36 +88,14 @@ function missScoring() {
 /* game over */
 
 function gameOver() {
-  window.open("./game-over.html", "_self");
+  document.getElementById("dog").play();
+  const playerScore = currentScoreDisplay.innerHTML
+  console.log(playerScore);
+  setTimeout(() => {
+    gameOverPage();
+  }, 800);
 };
 
-/* local storage score lists */
-
-/* localStorage.setItem("finalTally", "7");
-
-var finalTally = localStorage.getItem("finalTally"); */
-
-/* function set_LocalStorage(finalScore) {
- //localStorage.setItem("name of variable", "value to store");
-   localStorage.setItem(finalScore);
-   console.log(finalScore);
-}
-
-function get_LocalStorage(finalScore) {
-  return localStorage.getItem(finalScore);
-  console.log(finalScore);
-}
-
-*/
-
-/* const localStorageScoreKey = score.lists
-let lists = JSON.parse(localStorage.getItem(localStorageScoreKey)) || []
-
-function saveAndRender() {
-    save()
-    render()
-}
-
-function save() {
-    localStorage.setItem(localStorageScoreKey, JSON.stringify(lists))
-}
+function gameOverPage() {
+  window.open("./game-over.html", "_self");
+};
