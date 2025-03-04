@@ -72,3 +72,34 @@ function missScoring() {
 function gameOver() {
   window.open("./game-over.html", "_self");
 };
+
+/* local storage score lists */
+
+/* localStorage.setItem("finalTally", "7");
+
+var finalTally = localStorage.getItem("finalTally"); */
+
+/* function set_LocalStorage(finalScore) {
+ //localStorage.setItem("name of variable", "value to store");
+   localStorage.setItem(finalScore);
+   console.log(finalScore);
+}
+
+function get_LocalStorage(finalScore) {
+  return localStorage.getItem(finalScore);
+  console.log(finalScore);
+}
+
+*/
+
+/* const localStorageScoreKey = score.lists
+let lists = JSON.parse(localStorage.getItem(localStorageScoreKey)) || []
+
+function saveAndRender() {
+    save()
+    render()
+}
+
+function save() {
+    localStorage.setItem(localStorageScoreKey, JSON.stringify(lists))
+}
