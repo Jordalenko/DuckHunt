@@ -15,8 +15,8 @@ function gameStart() {
     gamePlay();
   }, "1200");
   document.getElementById("quack").play();
-}
+};
 
 function gamePlay() {
   window.open("./game.html", "_self");
-}
+};

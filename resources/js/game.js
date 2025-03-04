@@ -33,7 +33,7 @@ function shoot(event) {
   const bird = event.currentTarget;
   console.log(bird);
   scoring();
-}
+};
 
 window.onclick = function (e) {
   if (bullets > 0) {
@@ -59,15 +59,15 @@ window.onclick = function (e) {
 function scoring() {
   count += 1;
   currentScoreDisplay.innerHTML = count;
-}
+};
 
 function missScoring() {
   count -= 1;
   currentScoreDisplay.innerHTML = count;
-}
+};
 
 /* game over */
 
 function gameOver() {
   window.open("./game-over.html", "_self");
-}
+};
