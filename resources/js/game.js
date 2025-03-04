@@ -40,7 +40,6 @@ b5.addEventListener("click", shoot);
 b6.addEventListener("click", shoot);
 b7.addEventListener("click", shoot);
 b8.addEventListener("click", shoot);
-/* getFinalScore.addEventListener("click", getScore); */
 
 /* variable starting values */
 
@@ -50,7 +49,7 @@ let count = 0;
 /* dog animation */
 
 /* function dogAnimation() {
-    
+
     setTimeout(() => {
     document.getElementById("dog").play();
   }, 800);
