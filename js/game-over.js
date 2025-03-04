@@ -13,7 +13,6 @@ function gamePlay() {
 /* game restart */
 
 function gameRestart() {
-
     setTimeout(() => {
         gamePlay();
       }, "1500");

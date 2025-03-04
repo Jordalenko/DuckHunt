@@ -29,12 +29,39 @@ let count = 0;
 
 /* game play - hit birds */
 
+function shoot(event) {
+    const bird = event.currentTarget;
+    console.log(bird);
+    scoring();
+}
+
+window.onclick = function(e) {
+    if (bullets > 0) {
+       bullets--;
+       bulletCounter.innerHTML = bullets;
+        }
+        
+    if(e.target.classList !== "bird") {
+        missScoring();
+        document.getElementById("miss").play();
+        setTimeout(() => {
+             gameOver();
+             }, 9000);
+    } else if (e.target.classList == "bird") {
+        shoot();
+        document.getElementById("hit").play();
+        setTimeout(() => {
+             gameOver();
+             }, 9000);
+    }
+};
+
 /* function shoot(event) {
     const bird = event.currentTarget;
     console.log(bird);
+    scoring();
 
     if (event.target.classList.contains("bird")) {
-        scoring();
         bird.style.display = "none";
         document.getElementById("hit").play();
         setTimeout(() => {
@@ -44,9 +71,9 @@ let count = 0;
             bullets--;
             bulletCounter.innerHTML = bullets;
     }
-} */
+}
 
-/* game play - hit birds - attempt 1 */
+game play - hit birds - attempt 1
 
 function shoot(event) {
     const bird = event.currentTarget;
@@ -63,7 +90,7 @@ function shoot(event) {
           
 /* game play - miss birds */
 
-window.onclick = function(e) {
+/* window.onclick = function(e) {
     if (bullets > 0) {
        bullets--;
        bulletCounter.innerHTML = bullets;
@@ -78,7 +105,7 @@ window.onclick = function(e) {
         } else if (bullets == -1) {
                 setTimeout(gameOver, 2000);
         }
-};
+}; */
 
 /* game scoring */
           
