@@ -59,7 +59,7 @@ window.onclick = function (e) {
     bulletCounter.innerHTML = bullets;
     setTimeout(() => {
       gameOver();
-    }, 9000);
+    }, 8500);
   }
   if (bullets > 0 && e.target.classList.contains("bird")) {
     console.log("hit");
