@@ -52,59 +52,6 @@ window.onclick = function(e) {
         document.getElementById("hit").play();
     }
 };
-        
-    
-
-/* function shoot(event) {
-    const bird = event.currentTarget;
-    console.log(bird);
-    scoring();
-
-    if (event.target.classList.contains("bird")) {
-        bird.style.display = "none";
-        document.getElementById("hit").play();
-        setTimeout(() => {
-            gameOver();
-          }, 9000);
-        } if (bullets > 0) {
-            bullets--;
-            bulletCounter.innerHTML = bullets;
-    }
-}
-
-game play - hit birds - attempt 1
-
-function shoot(event) {
-    const bird = event.currentTarget;
-    console.log("bird");
-    if (bullets > 0) {
-        scoring();
-        bird.style.display = "none";
-        document.getElementById("hit").play();
-        setTimeout(() => {
-            gameOver();
-          }, "9000");
-    }
-}
-          
-/* game play - miss birds */
-
-/* window.onclick = function(e) {
-    if (bullets > 0) {
-       bullets--;
-       bulletCounter.innerHTML = bullets;
-        }
-        
-    if(e.target.classList !== "bird") {
-        missScoring();
-        document.getElementById("miss").play();
-        setTimeout(() => {
-             gameOver();
-             }, 9000);
-        } else if (bullets == -1) {
-                setTimeout(gameOver, 2000);
-        }
-}; */
 
 /* game scoring */
           
