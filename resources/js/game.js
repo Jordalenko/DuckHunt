@@ -29,10 +29,10 @@ let count = 0;
 
 /* game play - hit birds */
 
-function shoot(event) {
-  const bird = event.currentTarget;
+function shoot(e) {
+  const bird = e.target;
+  bird.style.display = "none";
   console.log(bird);
-  scoring();
 };
 
 window.onclick = function (e) {
@@ -43,14 +43,15 @@ window.onclick = function (e) {
       gameOver();
     }, 9000);
   }
-  if (e.target.classList !== "bird") {
+  if (e.target.classList.contains("bird")) {
+    console.log("hit");
+    document.getElementById("hit").play();
+    scoring();
+    shoot(e);
+  } else {
     console.log("miss hit");
     missScoring();
     document.getElementById("miss").play();
-  } else if (e.target.classList == "bird") {
-    console.log("hit");
-    shoot();
-    document.getElementById("hit").play();
   }
 };
 
