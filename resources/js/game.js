@@ -48,8 +48,8 @@ window.onclick = function (e) {
     document.getElementById("hit").play();
     scoring();
     shoot(e);
-  } else {
-    console.log("miss hit");
+  } else if (bullets > 0) {
+    console.log("miss");
     missScoring();
     document.getElementById("miss").play();
   }
