@@ -39,22 +39,21 @@ window.onclick = function(e) {
     if (bullets > 0) {
        bullets--;
        bulletCounter.innerHTML = bullets;
-        }
-        
-    if(e.target.classList !== "bird") {
+       setTimeout(() => {
+        gameOver();
+        }, 9000);
+    } if (e.target.classList !== "bird") {
+        console.log("miss hit")
         missScoring();
         document.getElementById("miss").play();
-        setTimeout(() => {
-             gameOver();
-             }, 9000);
     } else if (e.target.classList == "bird") {
+        console.log("hit")
         shoot();
         document.getElementById("hit").play();
-        setTimeout(() => {
-             gameOver();
-             }, 9000);
     }
 };
+        
+    
 
 /* function shoot(event) {
     const bird = event.currentTarget;
