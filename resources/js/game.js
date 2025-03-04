@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
 });
 
+/* dogAnimation(); */
+
 /* variables for event listeners */
 
 const b1 = document.getElementById("b1");
@@ -44,6 +46,15 @@ b8.addEventListener("click", shoot);
 
 let bullets = 8;
 let count = 0;
+
+/* dog animation */
+
+/* function dogAnimation() {
+    
+    setTimeout(() => {
+    document.getElementById("dog").play();
+  }, 800);
+}; */
 
 /* game play - hit birds */
 

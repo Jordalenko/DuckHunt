@@ -229,6 +229,20 @@ html {
     transform: rotateY(180deg);
 }
 
+/* #dog-walking {
+    left: 100%;
+    animation-name: dog-walk;
+    animation-delay: 200ms;
+    animation-duration: 1500ms;
+}
+
+#dog-jump {
+    left: 50%;
+    animation-name: dog-jump;
+    animation-delay: 20ms;
+    animation-duration: 500ms;
+} */
+
 @keyframes bird1 {
     10% {left: 20%; bottom: 35%}
     30% {left: 30%; bottom: 50%}
@@ -292,6 +306,17 @@ html {
     70% {left: 20%; bottom: 35%}
     100% {left: -20%; bottom: 100%}
 }
+
+/* @keyframes dog-walk {
+    0% {left: 5%; bottom: 15%}
+    100% {left: 50%; bottom: 15%}
+}
+
+@keyframes dog-jump {
+    0% {left: 50%; bottom: 15%} * z-index-1
+    50% {left: 50%; bottom: 20%} * z-index-1
+    100% {left:50%; bottom: 15%} * z-index-0
+} */
 
 /* screen sizes */
 
