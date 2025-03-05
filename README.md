@@ -171,7 +171,7 @@ In order to deploy the [repository](https://jordalenko.github.io/DuckHunt/) from
 • Lewis Dillon - September 2024 Gwent Standup facilitator provided important grounding of necessary methods and functions.
 <br>
 <br>
-• Brian Manchia - My mentor offered invaluable advice on scope and links to MDN docs for various processes and features.
+• Brian Macharia - My mentor offered invaluable advice on scope and links to MDN docs for various processes and features.
 <br>
 <br>
 • Oisin - A particularly strong tutor was also integral to figuring out how to streamline my code, not just making it more efficient but unlocking blocks the complexity presented.
