@@ -14,7 +14,7 @@ function gameStart() {
   setTimeout(() => {
     gamePlay();
   }, "1200");
-  document.getElementById("quack").play();
+  document.getElementById("doggie").play();
 };
 
 function gamePlay() {

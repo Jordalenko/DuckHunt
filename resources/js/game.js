@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 /* variables for event listeners */
 
+const dogJumper = document.getElementById("dog-jump-1")
+const dogJumpered = document.getElementById("dog-jump-2")
 const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
 const b3 = document.getElementById("b3");
@@ -48,8 +50,10 @@ let count = 0;
 
 dogAnimation();
 dogDisappear();
-/* dogJump();
-dogJumped(); */
+dogJump();
+dogJumping();
+dogJumped();
+dogJumpedDis()
 
 function dogAnimation() {
     setTimeout(() => {
@@ -63,29 +67,31 @@ function dogDisappear() {
 }, 5000);
 };
 
-/* function dogJump() {
+function dogJump() {
   setTimeout(() => {
-  document.getElementById("dog-jump-1").hidden = false;
+  dogJumper.hidden = false;
 }, 5000);
 };
 
-function dogJump() {
+function dogJumping() {
   setTimeout(() => {
-  document.getElementById("dog-jump-1").hidden = true;
-}, 5500);
+  dogJumper.hidden = true;
+}, 5250);
 };
 
 function dogJumped() {
   setTimeout(() => {
-  document.getElementById("dog-jump-2").hidden = false;
-}, 5500);
+    dogJumpered.hidden = false;
+}, 5250);
 };
 
-function dogJumped() {
+function dogJumpedDis() {
   setTimeout(() => {
-  document.getElementById("dog-jump-2").hidden = true;
-}, 6000);
-}; */
+    dogJumpered.hidden = true;
+    console.log("bark");
+    document.getElementById("doggie").play();
+}, 5500);
+};
 
 /* game play - hit birds */
 
