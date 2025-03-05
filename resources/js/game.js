@@ -56,9 +56,9 @@ dogJumped();
 dogJumpedDis()
 
 function dogAnimation() {
-    setTimeout(() => {
-    document.getElementById("dog-stopped").hidden = false;
-  }, 4000);
+  setTimeout(() => {
+  document.getElementById("dog-stopped").hidden = false;
+}, 4000);
 };
 
 function dogDisappear() {
@@ -88,8 +88,6 @@ function dogJumped() {
 function dogJumpedDis() {
   setTimeout(() => {
     dogJumpered.hidden = true;
-    console.log("bark");
-    document.getElementById("doggie").play();
 }, 5500);
 };
 
@@ -134,23 +132,26 @@ function missScoring() {
   currentScoreDisplay.innerHTML = count;
 };
 
-/* game over */
+/* game over functions */
+
+/* get final score */
 
 function gameOver() {
   const playerScore = currentScoreDisplay.innerHTML
   console.log(playerScore);
-  setTimeout(() => {
-    gameOverPage();
-  }, 1000);
-  /* dogRises(); */
+  dogRises();
 };
 
-/* function dogRises() {
+/* end dog animation */
+
+function dogRises() {
+  document.getElementById("dog-up").hidden = false;
   setTimeout(() => {
-    document.getElementById("dog-up").hidden = false;
-  }, 2900);
-  gameOverPage();
-}; */
+    gameOverPage();
+  }, 3100);
+};
+
+/* game over page launch */
 
 function gameOverPage() {
   window.open("./game-over.html", "_self");

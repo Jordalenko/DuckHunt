@@ -266,15 +266,15 @@ html {
     bottom: 25%;
 }
 
-/* #dog-up {
+#dog-up {
     z-index: 0;
     width: 10%;
     position: absolute;
     left: 43%;
     bottom: 13%;
     animation-name: dog-rises;
-    animation-duration: 3000ms;
-} */
+    animation-duration: 3400ms;
+}
 
 @keyframes bird1 {
     10% {left: 20%; bottom: 35%}
@@ -350,10 +350,10 @@ html {
     100% {left:43%; bottom: 15%}
 }
 
-/* @keyframes dog-rises {
+@keyframes dog-rises {
     0% {left: 43%; bottom: 13%}
     100% {left:43%; bottom: 25%}
-} */
+}
 
 /* screen sizes */
 
