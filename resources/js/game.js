@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 /* variables for event listeners */
 
-const dogJumper = document.getElementById("dog-jump-1")
-const dogJumpered = document.getElementById("dog-jump-2")
+const dogJumper = document.getElementById("dog-jump-1");
+const dogJumpered = document.getElementById("dog-jump-2");
 const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
 const b3 = document.getElementById("b3");
@@ -21,14 +21,6 @@ const bulletCounter = document.getElementById("currentBullets");
 
 /* local storage */
 
-/* Example of saving a new high score
-// const newScore = { name: “Player1”, score: 8 };
-// Retrieve existing high scores
-// const highScores = JSON.parse(localStorage.getItem(“highScores”)) || [];
-// Add the new score
-// highScores.push(newScore);
-// Save back to localStorage
-// localStorage.setItem(“highScores”, JSON.stringify(highScores)); */
 
 /* event listeners */
 
@@ -53,43 +45,43 @@ dogDisappear();
 dogJump();
 dogJumping();
 dogJumped();
-dogJumpedDis()
+dogJumpedDis();
 
 function dogAnimation() {
   setTimeout(() => {
   document.getElementById("dog-stopped").hidden = false;
 }, 4000);
-};
+}
 
 function dogDisappear() {
   setTimeout(() => {
   document.getElementById("dog-stopped").hidden = true;
 }, 5000);
-};
+}
 
 function dogJump() {
   setTimeout(() => {
   dogJumper.hidden = false;
 }, 5000);
-};
+}
 
 function dogJumping() {
   setTimeout(() => {
   dogJumper.hidden = true;
 }, 5250);
-};
+}
 
 function dogJumped() {
   setTimeout(() => {
     dogJumpered.hidden = false;
 }, 5250);
-};
+}
 
 function dogJumpedDis() {
   setTimeout(() => {
     dogJumpered.hidden = true;
 }, 5500);
-};
+}
 
 /* game play - hit birds */
 
@@ -97,7 +89,7 @@ function shoot(e) {
   const bird = e.target;
   bird.style.display = "none";
   console.log(bird);
-};
+}
 
 window.onclick = function (e) {
   if (bullets > 0) {
@@ -125,22 +117,22 @@ window.onclick = function (e) {
 function scoring() {
   count += 1;
   currentScoreDisplay.innerHTML = count;
-};
+}
 
 function missScoring() {
   count -= 1;
   currentScoreDisplay.innerHTML = count;
-};
+}
 
 /* game over functions */
 
 /* get final score */
 
 function gameOver() {
-  const playerScore = currentScoreDisplay.innerHTML
+  const playerScore = currentScoreDisplay.innerHTML;
   console.log(playerScore);
   dogRises();
-};
+}
 
 /* end dog animation */
 
@@ -149,10 +141,10 @@ function dogRises() {
   setTimeout(() => {
     gameOverPage();
   }, 3100);
-};
+}
 
 /* game over page launch */
 
 function gameOverPage() {
   window.open("./game-over.html", "_self");
-};
+}

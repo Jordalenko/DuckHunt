@@ -121,6 +121,12 @@ Wave flagged errors for no text on social media links (disregarded).
 
 ### Known Issues
 
+- If no shots are fired the game over and restart button will not launch.
+
+- When using a trackpad if the player drags their finger when clicking at all the cursor will grab and ghost the duck gif instead of shooting and disappearing it.
+
+- The buttons and game over text over the index.html and game-over.html are roughly centered at all times but they do move.  I have positioned them for the bootstrap breakpoints and made a couple subtle adjustments for iPhone landscape and portrait.
+
 ---
 
 ## Deployment

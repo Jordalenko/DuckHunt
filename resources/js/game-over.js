@@ -8,7 +8,7 @@ restartGame.addEventListener("click", gameRestart);
 
 function gamePlay() {
   window.open("./game.html", "_self");
-};
+}
 
 /* game restart */
 
@@ -17,4 +17,4 @@ function gameRestart() {
     gamePlay();
   }, "1500");
   document.getElementById("doggie").play();
-};
+}
