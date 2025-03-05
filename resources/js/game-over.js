@@ -16,5 +16,5 @@ function gameRestart() {
   setTimeout(() => {
     gamePlay();
   }, "1500");
-  document.getElementById("quack").play();
+  document.getElementById("doggie").play();
 };
