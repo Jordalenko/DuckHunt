@@ -111,6 +111,12 @@ Wave flagged errors for no text on social media links (disregarded).
 
 - Add scoring function to remove a point for missed shots.
 
+- In order to prevent double scoring or no scoring or sound because both the window event and event listeners triggered the shoot function, I moved the scoring function from the shoot function to the window event.  I also changed the shoot function syntax from (event) and event.currentTarget to (e) and e.target to allow the function to match the window function syntax for events. Thanks to tutor Oishin for helping me find the solution.
+
+- Fix the dog animation. 
+
+- When I first created the animation the dog walking and stopping to sniff worked. But the jumping and end animation did not show up. I had neglected to create a separate function for the .hidden = false and .hidden = true. Once I fixed that the dog jump worked. The end animation timeout was not working. Once I fixed the dog jumping this animation worked as expected.
+
 
 
 ### Known Issues
