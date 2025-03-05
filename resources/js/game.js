@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
 });
 
-/* dogAnimation(); */
-
 /* variables for event listeners */
 
 const b1 = document.getElementById("b1");
@@ -48,11 +46,45 @@ let count = 0;
 
 /* dog animation */
 
-/* function dogAnimation() {
+dogAnimation();
+dogDisappear();
+/* dogJump();
+dogJumped(); */
 
+function dogAnimation() {
     setTimeout(() => {
-    document.getElementById("dog").play();
-  }, 800);
+    document.getElementById("dog-stopped").hidden = false;
+  }, 4000);
+};
+
+function dogDisappear() {
+  setTimeout(() => {
+  document.getElementById("dog-stopped").hidden = true;
+}, 5000);
+};
+
+/* function dogJump() {
+  setTimeout(() => {
+  document.getElementById("dog-jump-1").hidden = false;
+}, 5000);
+};
+
+function dogJump() {
+  setTimeout(() => {
+  document.getElementById("dog-jump-1").hidden = true;
+}, 5500);
+};
+
+function dogJumped() {
+  setTimeout(() => {
+  document.getElementById("dog-jump-2").hidden = false;
+}, 5500);
+};
+
+function dogJumped() {
+  setTimeout(() => {
+  document.getElementById("dog-jump-2").hidden = true;
+}, 6000);
 }; */
 
 /* game play - hit birds */
@@ -76,7 +108,8 @@ window.onclick = function (e) {
     document.getElementById("hit").play();
     scoring();
     shoot(e);
-  } else if (bullets > 0) {
+  } 
+  else if (bullets > 0) {
     console.log("miss");
     missScoring();
     document.getElementById("miss").play();
@@ -98,13 +131,20 @@ function missScoring() {
 /* game over */
 
 function gameOver() {
-  document.getElementById("dog").play();
   const playerScore = currentScoreDisplay.innerHTML
   console.log(playerScore);
   setTimeout(() => {
     gameOverPage();
-  }, 800);
+  }, 1000);
+  /* dogRises(); */
 };
+
+/* function dogRises() {
+  setTimeout(() => {
+    document.getElementById("dog-up").hidden = false;
+  }, 2900);
+  gameOverPage();
+}; */
 
 function gameOverPage() {
   window.open("./game-over.html", "_self");
