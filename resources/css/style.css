@@ -756,6 +756,24 @@ html {
         width: 210px;
         left: calc(50% - 97px);
     }
+
+    .bottom-img {
+        position: relative;
+        z-index: 0;
+        max-height: 100vh;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        }
+    
+    #foregrnd {
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        height: 24vh;
+        object-fit: cover;
+        object-position: bottom;
+        bottom: 0;
+    }
     
     #bullets {
         z-index: 1;
@@ -822,6 +840,14 @@ html {
 }
 
 @media (min-width: 1400px) {
+
+    .bottom-img {
+    position: relative;
+    z-index: 0;
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    }
 
     #foregrnd {
         position: absolute;
