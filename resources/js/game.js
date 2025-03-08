@@ -84,7 +84,6 @@ function dogJumpedDis() {
 function shoot(e) {
   const bird = e.target;
   bird.style.display = "none";
-  console.log(bird);
 }
 
 window.onclick = function (e) {
@@ -96,7 +95,6 @@ window.onclick = function (e) {
     }, 8500);
   }
   if (bullets > 0 && e.target.classList.contains("bird")) {
-    console.log("hit");
     document.getElementById("hit").play();
     scoring();
     shoot(e);

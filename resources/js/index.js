@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("DOM fully loaded and parsed");
-});
-
 /* add event listeners */
 
 const startGame = document.getElementById("startButton");
