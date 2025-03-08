@@ -36,6 +36,8 @@ let count = 0;
 
 /* dog animation */
 
+/* dog animation function calls */
+
 dogAnimation();
 dogDisappear();
 dogJump();
@@ -43,62 +45,89 @@ dogJumping();
 dogJumped();
 dogJumpedDis();
 
+/* dog animation functions */
+
+/* dog animation - walking left to right */
+
 function dogAnimation() {
+  //delay dog walking animation un-hide
   setTimeout(() => {
+  //un-hide dog walking animation
   document.getElementById("dog-stopped").hidden = false;
 }, 4000);
 }
 
 function dogDisappear() {
+  //delay dog walking animation re-hide
   setTimeout(() => {
+  //re-hide dog walking animation
   document.getElementById("dog-stopped").hidden = true;
 }, 5000);
 }
 
+/* dog animation - jump */
+
 function dogJump() {
+  //delay dog jump 1 un-hide
   setTimeout(() => {
+  //un-hide dog jump 1
   dogJumper.hidden = false;
 }, 5000);
 }
 
 function dogJumping() {
+  //delay dog jump 1 re-hide
   setTimeout(() => {
+  //re-hide dog jump 1
   dogJumper.hidden = true;
 }, 5250);
 }
 
 function dogJumped() {
+  //delay dog jump 2 un-hide
   setTimeout(() => {
+    //un-hide dog jump 2
     dogJumpered.hidden = false;
 }, 5250);
 }
 
 function dogJumpedDis() {
+  //delay dog jump 2 re-hide
   setTimeout(() => {
+    //re-hide dog jump 2
     dogJumpered.hidden = true;
 }, 5500);
 }
+
+/* game play  */
 
 /* game play - hit birds */
 
 function shoot(e) {
   const bird = e.target;
+  //disappear bird on click
   bird.style.display = "none";
 }
 
+/* game play - shoot */
+
 window.onclick = function (e) {
   if (bullets > 0) {
+    //reduce bullet counter
     bullets--;
     bulletCounter.innerHTML = bullets;
+    //trigger game over function delay
     setTimeout(() => {
       gameOver();
     }, 8500);
   }
+  //trigger hit sound and score function for hitting a bird and disappear bird function
   if (bullets > 0 && e.target.classList.contains("bird")) {
     document.getElementById("hit").play();
     scoring();
     shoot(e);
   } 
+  //play missed shot sound and deduct one point function
   else if (bullets > 0 && (!e.target.classList.contains("btn"))) {
       missScoring();
       document.getElementById("miss").play();
@@ -109,11 +138,13 @@ window.onclick = function (e) {
 /* game scoring */
 
 function scoring() {
+  //add one point to score
   count += 1;
   currentScoreDisplay.innerHTML = count;
 }
 
 function missScoring() {
+  //deduct one point from score
   count -= 1;
   currentScoreDisplay.innerHTML = count;
 }
@@ -121,14 +152,18 @@ function missScoring() {
 /* game over functions */
 
 function gamePlay() {
+  //launch new game function
   window.open("./game.html", "_self");
 }
 
 /* game end text + button */
 
 function gameOver() {
+  //trigger laughing dog animation
   dogRises();
+  //delay un-hide gameover text
   setTimeout(() => {
+    //un-hide game over text
     document.getElementById("gameEnder").hidden = false;
 }, 3500);
 }
@@ -136,13 +171,16 @@ function gameOver() {
 /* end dog animation */
 
 function dogRises() {
+  //un-hide dog animation
   document.getElementById("dog-up").hidden = false;
 }
 
-/* game over page launch  */
+/* game restart function launch  */
 
 function gameRestart() {
+  //play dog bark sound
   document.getElementById("doggie").play();
+  //delay start of game restart function
   setTimeout(() => {
     gamePlay();
 }, 1500);
