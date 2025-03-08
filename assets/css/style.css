@@ -79,17 +79,6 @@ html {
     left: 10px;
 }
 
-/* #finalScore {
-    z-index: 1;
-    position: absolute;
-    font-size: small;
-    padding: 5px 20px;
-    border-radius: 10px;
-    background: white;
-    bottom: 5px;
-    left: calc(50% - 97px);
-} */
-
 #score {
     z-index: 1;
     position: absolute;
@@ -381,17 +370,6 @@ html {
         bottom: 5px;
         left: 10px;
     }
-
-    /* #finalScore {
-        z-index: 1;
-        position: absolute;
-        font-size: small;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background: white;
-        bottom: 5px;
-        left: calc(50% - 97px);
-    } */
     
     #score  {
         z-index: 1;
@@ -487,17 +465,6 @@ html {
         bottom: 5px;
         left: 10px;
     }
-
-    /* #finalScore {
-        z-index: 1;
-        position: absolute;
-        font-size: small;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background: white;
-        bottom: 5px;
-        left: calc(50% - 97px);
-    } */
     
     #score  {
         z-index: 1;
@@ -589,17 +556,6 @@ html {
         bottom: 10px;
         left: 16px;
     }
-
-    /* #finalScore {
-        z-index: 1;
-        position: absolute;
-        font-size: small;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background: white;
-        bottom: 5px;
-        left: calc(50% - 97px);
-    } */
     
     #score  {
         z-index: 1;
@@ -693,17 +649,6 @@ html {
         bottom: 10px;
         left: 16px;
     }
-
-    /* #finalScore {
-        z-index: 1;
-        position: absolute;
-        font-size: small;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background: white;
-        bottom: 5px;
-        left: calc(50% - 97px);
-    } */
     
     #score  {
         z-index: 1;
@@ -797,17 +742,6 @@ html {
         bottom: 10px;
         left: 16px;
     }
-
-    /* #finalScore {
-        z-index: 1;
-        position: absolute;
-        font-size: small;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background: white;
-        bottom: 5px;
-        left: calc(50% - 97px);
-    } */
     
     #score  {
         z-index: 1;
@@ -919,17 +853,6 @@ html {
         bottom: 10px;
         left: 16px;
     }
-
-    /* #finalScore {
-        z-index: 1;
-        position: absolute;
-        font-size: small;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background: white;
-        bottom: 5px;
-        left: calc(50% - 97px);
-    } */
     
     #score  {
         z-index: 1;
@@ -1025,17 +948,6 @@ html {
         bottom: 10px;
         left: 16px;
     }
-
-    /* #finalScore {
-        z-index: 1;
-        position: absolute;
-        font-size: small;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background: white;
-        bottom: 5px;
-        left: calc(50% - 97px);
-    } */
     
     #score  {
         z-index: 1;
@@ -1113,17 +1025,6 @@ html {
         bottom: 10px;
         left: 26px;
     }
-
-    /* #finalScore {
-        z-index: 1;
-        position: absolute;
-        font-size: small;
-        padding: 5px 20px;
-        border-radius: 10px;
-        background: white;
-        bottom: 5px;
-        left: calc(50% - 97px);
-    } */
     
     #score  {
         z-index: 1;
