@@ -1,6 +1,6 @@
 # Duck Hunt JavaScript Game
 
-![Duck Hunt JavaScript](./resources/images/dh-game-start-v2.webp)
+![Duck Hunt JavaScript](./assets/images/readme/duckhunt-game-startv2.webp)
 
 My Duck Hunt JavaScript Game is a classic game for everyone. A dog bark introduces the gameplay screen when the start button is pressed. A dog walks in from screen left along the dirt road, sniffing the ground as they go. They stop in the middle if the road sniffing with more purpose before jumping into the grass and dispersing the Ducks into the air. 
 
@@ -12,7 +12,7 @@ The game over screen launches and the player is given the option to restart the 
 
 ---
 
-![](./resources/images/readme/duckhunt-responsive-sizing-exceptions.webp)
+![](./assets/images/readme/duckhunt-responsive-sizing-exceptions.webp)
 
 
 # Responsive
@@ -30,29 +30,15 @@ To engage gamers with a fun javascript hunting game.
 • Player 3 - "I want a simple game I can play anywhere." <br>
 • Player 4 - "I want a challenging game that I can play even if I only have a few minutes."
 
-## Wireframe Mockups
-
-### Phone Size
-
-[](./)
-
-### Tablet Size
-
-[](./)
-
-### Desktop Size
-
-[](./)
-
 ## Game Features
 
 I used a single game background as the size of the gameplay area should keep the same aspect to maintain a common relative size of the ducks and shooting area.
 
-![Game Play](./resources/images/readme/duckhunt-gameplay-3v2.webp)
+![Game Play](./assets/images/readme/duckhunt-gameplay-3v2.webp)
 
 There are sounds and animations for both dogs and ducks in the game. The one below opens the gameplay page.
 
-![Game Play](./resources/images/readme/duckhunt-gameplay-1v2.webp)
+![Game Play](./assets/images/readme/duckhunt-gameplay-1v2.webp)
 
 There are two other pages (seen below) in the game. The game start and game over pages both have buttons that allow you to start or restart the game. When clicked on ducks produce a gunshot sound while a miss produces a ping sound.
 <br>
@@ -62,10 +48,10 @@ Any shot reduces the bullet count by one. A hit adds one point to the score, whi
 <br>
 The buttons on the screens below produce a dog bark and launch gameplay.
 
-![Game Play](./resources/images/readme/duckhunt-game-startv2.webp) 
+![Game Play](./assets/images/readme/duckhunt-game-startv2.webp) 
 <br>
 <br>
-![Game Play](./resources/images/readme/duckhunt-game-overv2.webp)
+![Game Play](./assets/images/readme/dh-game-over.webp)
 
 ## Future Goals
 
@@ -111,9 +97,8 @@ W3 Validation of css flagged many errors.
 
 Lighthouse scored 100 on performance for game play and game over, while the game start page scored 90.
 
-![](./resources/images/readme/duckhunt-game-start-lighthouse.webp)
-![](./resources/images/readme/duckhunt-game-play-lighthouse.webp)
-![](./resources/images/readme/duckhunt-game-end-lighthouse.webp)
+![](./assets/images/readme/duckhunt-game-start-lighthouse.webp)
+![](./assets/images/readme/duckhunt-game-play-lighthouse.webp)
 
 ### Issues and resolutions
 
@@ -150,6 +135,8 @@ Lighthouse scored 100 on performance for game play and game over, while the game
 ### Known Issues
 
 - If no shots are fired the game over and restart button will not launch.
+
+- If shots are fired too quickly the sound will not play.
 
 - When using a trackpad if the player drags their finger when clicking at all the cursor will grab and ghost the duck gif instead of shooting and disappearing it.
 
