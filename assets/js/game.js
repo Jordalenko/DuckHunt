@@ -129,8 +129,8 @@ function gamePlay() {
 function gameOver() {
   dogRises();
   setTimeout(() => {
-    document.getElementById("gameEnder").hidden = false
-}, 3500)
+    document.getElementById("gameEnder").hidden = false;
+}, 3500);
 }
 
 /* end dog animation */

@@ -2,11 +2,9 @@
 
 ![Duck Hunt JavaScript](./assets/images/readme/duckhunt-game-startv2.webp)
 
-My Duck Hunt JavaScript Game is a classic game for everyone. A dog bark introduces the gameplay screen when the start button is pressed. A dog walks in from screen left along the dirt road, sniffing the ground as they go. They stop in the middle if the road sniffing with more purpose before jumping into the grass and dispersing the Ducks into the air. 
+My second milestone project for code institute is a JavaScript Game called Duck Hunt. It is a classic 80's computer game for everyone. A dog bark introduces the gameplay screen when the start button is pressed. A dog walks in from screen left along the dirt road, sniffing the ground as they go. They pause in the middle of the road, sniffing with more purpose, before jumping into the grass and dispersing the Ducks into the air.
 
-Using hand eye coordination skills, a player needs to successfully target the eight ducks with their 8 bullets. The goal is to click on the moving Ducks to shoot successfully. If the player hits the Duck a gunshot sound plays and a point is added to their score. If the player misses a ping sound plays and a point is deducted from their score. When all the ducks have left the screen a dog rises from the grass laughing.
-
-The game over screen launches and the player is given the option to restart the game, with another bark and the sequence repeats.
+Using hand eye coordination skills, a player needs to successfully target the eight ducks with their 8 available bullets. The goal is to click on the moving Ducks to shoot successfully. If the player hits a Duck a gunshot sound plays and a point is added to their score. If the player misses a ping sound plays and a point is deducted from their score. When all the ducks have left the screen a dog rises from the grass laughing. The game over text appears and the player is given the option to restart the game.
 
 [View Live Game Here.](https://jordalenko.github.io/DuckHunt/)
 
@@ -21,14 +19,20 @@ The game over screen launches and the player is given the option to restart the 
 
 ## Aim of the game
 
-To engage gamers with a fun javascript hunting game.
+To engage gamers with a fun javascript aim and shoot game.
 
 ## User Stories
 
-• Player 1 - "As a gamer I want a fun engaging game." <br>
-• Player 2 - "I want a shooter game I can play on my phone game." <br>
-• Player 3 - "I want a simple game I can play anywhere." <br>
-• Player 4 - "I want a challenging game that I can play even if I only have a few minutes."
+As a visitor to the site I want:
+
+• "To easily understand the purpose of the site/game." <br>
+• "The game to function as expected." <br>
+• "To be able to easily navigate the site." <br>
+• "The site to be responsive and resize for any screen size."
+• "To be able to see both my score and the number of bullets remaining at all times." <br>
+• "A shooter game I can play on my phone game." <br>
+• "A simple game I can play anywhere." <br>
+• "A challenging game that I can play even if I only have a few minutes."
 
 ## Game Features
 
@@ -83,6 +87,26 @@ Other technologies
 
 ## Testing
 
+### Browser testing
+
+* I have tested that this page works using macOS (Macbook Pro) and PC (Windows).
+<br>
+<br>
+* I have tested that this page works in the following browsers using macOS: Chrome, Safari and Firefox.
+<br>
+<br>
+* I have tested this page works on iOS devices using Safari browser (iPhone 14 Pro).
+
+### Responsiveness
+
+
+* Chrome developer tool have been used to check the responsivness.
+<br>
+<br>
+* I have tested that this page works on different screen sizes, phones (240px wide) and large screens like a desktop computer screen (1920 x 1080 px).
+
+### Validator Testing
+
 W3 Validation of html flagged a no errors.
 
 - Unnecessary semi-colons were deleted.
@@ -95,10 +119,30 @@ W3 Validation of css flagged many errors.
 - Many .btn css also had an incorrect box-sizing property of content. That was replaced with content-box.
 - Many .btn css also had an unnecessary box property which was deleted.
 
+![](./assets/images/readme/w3css-validator.webp)
+
+JSHint was used to validate the JavaScript.
+
+![](./assets/images/readme/dh-jshint-validator.webp)
+
 Lighthouse scored 100 on performance for game play and game over, while the game start page scored 90.
 
 ![](./assets/images/readme/duckhunt-game-start-lighthouse.webp)
 ![](./assets/images/readme/duckhunt-game-play-lighthouse.webp)
+
+### Functionality
+
+![](./assets/images/readme/dh-functionality-table.webp)
+
+### Further Testing
+
+* I tested that the border on the buttons disappears and reappears when hovered over.
+* I tested that the timeouts all sync with the animations.
+* I tested that the buttons are all positioned in a readable place in all screen sizes. 
+
+### Solved bugs
+
+* I didn't encounter any bugs per se.
 
 ### Issues and resolutions
 
@@ -185,3 +229,4 @@ Dog sound effect was sourced from (https://mixkit.co/free-sound-effects/dog/).
 
 ### Acknowledgements
 
+My mentor was particularly helpful on this project.
