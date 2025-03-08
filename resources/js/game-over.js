@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("DOM fully loaded and parsed");
-});
-
 const restartGame = document.getElementById("gameEnd");
 
 restartGame.addEventListener("click", gameRestart);

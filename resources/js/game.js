@@ -1,9 +1,3 @@
-/* confirm dom loading */
-
-document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("DOM fully loaded and parsed");
-});
-
 /* variables for event listeners */
 
 const dogJumper = document.getElementById("dog-jump-1");
@@ -18,6 +12,7 @@ const b7 = document.getElementById("b7");
 const b8 = document.getElementById("b8");
 const currentScoreDisplay = document.getElementById("currentScore");
 const bulletCounter = document.getElementById("currentBullets");
+const restartGame = document.getElementById("gameEndered");
 
 /* local storage */
 
@@ -32,6 +27,7 @@ b5.addEventListener("click", shoot);
 b6.addEventListener("click", shoot);
 b7.addEventListener("click", shoot);
 b8.addEventListener("click", shoot);
+restartGame.addEventListener("click", gameRestart);
 
 /* variable starting values */
 
@@ -105,12 +101,12 @@ window.onclick = function (e) {
     scoring();
     shoot(e);
   } 
-  else if (bullets > 0) {
-    console.log("miss");
-    missScoring();
-    document.getElementById("miss").play();
+  else if (bullets > 0 && (!e.target.classList.contains("btn"))) {
+      missScoring();
+      document.getElementById("miss").play();
   }
 };
+
 
 /* game scoring */
 
@@ -126,25 +122,30 @@ function missScoring() {
 
 /* game over functions */
 
-/* get final score */
+function gamePlay() {
+  window.open("./game.html", "_self");
+}
+
+/* game end text + button */
 
 function gameOver() {
-  const playerScore = currentScoreDisplay.innerHTML;
-  console.log(playerScore);
   dogRises();
+  setTimeout(() => {
+    document.getElementById("gameEnder").hidden = false
+}, 3500)
 }
 
 /* end dog animation */
 
 function dogRises() {
   document.getElementById("dog-up").hidden = false;
-  setTimeout(() => {
-    gameOverPage();
-  }, 3100);
 }
 
-/* game over page launch */
+/* game over page launch  */
 
-function gameOverPage() {
-  window.open("./game-over.html", "_self");
+function gameRestart() {
+  document.getElementById("doggie").play();
+  setTimeout(() => {
+    gamePlay();
+}, 1500);
 }

@@ -30,7 +30,7 @@ body {
 }
 
 .btn {
-    font-size: 10px;
+    font-size: .5rem;
     color: black;
     border: solid;
     box-sizing: content-box;
@@ -71,15 +71,15 @@ html {
 #bullets {
     z-index: 1;
     position: absolute;
-    font-size: small;
-    padding: 5px 20px;
+    font-size: .5rem;
+    padding: 3px 5px;
     border-radius: 10px;
     background: white;
     bottom: 5px;
     left: 10px;
 }
 
-#finalScore {
+/* #finalScore {
     z-index: 1;
     position: absolute;
     font-size: small;
@@ -88,13 +88,13 @@ html {
     background: white;
     bottom: 5px;
     left: calc(50% - 97px);
-}
+} */
 
 #score {
     z-index: 1;
     position: absolute;
-    font-size: small;
-    padding: 5px 20px;
+    font-size: .5rem;
+    padding: 3px 5px;
     border-radius: 10px;
     background: white;
     bottom: 5px;
@@ -102,6 +102,11 @@ html {
 }
 
 /* game over page */
+
+#gameEnder {
+    position: absolute;
+    z-index: 3;
+}
 
 #endIMG {
     position: fixed;
@@ -115,19 +120,39 @@ html {
     position: fixed;
     bottom: 84%;
     background: white;
-    width: 110px;
-    left: calc(50% - 50px);
+    width: 60px;
+    left: calc(50% - 25px);
+}
+
+#gameEndered {
+    position: absolute;
+    bottom: 84%;
+    background: white;
+    width: 60px;
+    left: calc(50% - 25px);
 }
 
 #endGame {
     position: fixed;
-    font-size: 10px;
+    font-size: .5rem;
+    bottom: 88%;
+    background: black;
+    color: white;
+    width: 80px;
+    border-radius: 20px;
+    left: calc(50% - 35px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#endGamer {
+    position: absolute;
+    font-size: .5rem;
     bottom: 88%;
     background: black;
     color: white;
     width: 110px;
     border-radius: 20px;
-    left: calc(50% - 50px);
+    left: calc(50% - 60px);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -137,7 +162,7 @@ html {
     z-index: 0;
     width: 10%;
     position: absolute;
-    bottom: 7%;
+    bottom: 6%;
 }
 
 #b1 {
@@ -242,9 +267,9 @@ html {
     width: 10%;
     position: absolute;
     left: 43%;
-    bottom: 13%;
+    bottom: 8%;
     animation-name: dog-rises;
-    animation-duration: 3400ms;
+    animation-duration: 8400ms;
 }
 
 @keyframes bird1 {
@@ -322,8 +347,11 @@ html {
 }
 
 @keyframes dog-rises {
-    0% {left: 43%; bottom: 13%}
-    100% {left:43%; bottom: 25%}
+    0% {left: 43%; bottom: 8%}
+    30% {left:43%; bottom: 23%}
+    50% {left:43%; bottom: 23%}
+    70% {left:43%; bottom: 23%}
+    100% {left:43%; bottom: 8%}
 }
 
 /* screen sizes */
@@ -349,12 +377,12 @@ html {
     #bullets {
         z-index: 1;
         position: absolute;
-        font-size: small;
+        font-size: .5rem;
         bottom: 5px;
         left: 10px;
     }
 
-    #finalScore {
+    /* #finalScore {
         z-index: 1;
         position: absolute;
         font-size: small;
@@ -363,18 +391,18 @@ html {
         background: white;
         bottom: 5px;
         left: calc(50% - 97px);
-    }
+    } */
     
     #score  {
         z-index: 1;
         position: absolute;
-        font-size: small;
+        font-size: .5rem;
         bottom: 5px;
         right: 10px;
     }
 
     .btn {
-        font-size: 10px;
+        font-size: .35rem;
         color: black;
         border: solid;
         box-sizing: content-box;
@@ -391,21 +419,44 @@ html {
     
     #gameEnd {
         position: fixed;
+        font-size: .5rem;
         bottom: 84%;
         background: white;
-        width: 110px;
-        left: calc(50% - 50px);
+        width: 60px;
+        left: calc(50% - 25px);
+    }
+    
+    #gameEndered {
+        position: fixed;
+        font-size: .5rem;
+        bottom: 84%;
+        background: white;
+        width: 60px;
+        left: calc(50% - 25px);
     }
     
     #endGame {
         position: fixed;
-        font-size: 10px;
+        font-size: .5rem;
         bottom: 88%;
         background: black;
         color: white;
         width: 110px;
         border-radius: 10px;
-        left: calc(50% - 50px);
+        left: calc(50% - 43px);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    
+    #endGamer {
+        position: fixed;
+        font-size: .5rem;
+        bottom: 88%;
+        background: black;
+        color: white;
+        width: 110px;
+        border-radius: 10px;
+        left: calc(50% - 43px);
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bolder;
     }
@@ -432,12 +483,12 @@ html {
     #bullets {
         z-index: 1;
         position: absolute;
-        font-size: small;
+        font-size: .5rem;
         bottom: 5px;
         left: 10px;
     }
 
-    #finalScore {
+    /* #finalScore {
         z-index: 1;
         position: absolute;
         font-size: small;
@@ -446,18 +497,18 @@ html {
         background: white;
         bottom: 5px;
         left: calc(50% - 97px);
-    }
+    } */
     
     #score  {
         z-index: 1;
         position: absolute;
-        font-size: small;
+        font-size: .5rem;
         bottom: 5px;
         right: 10px;
     }
 
     .btn {
-        font-size: 16px;
+        font-size: .6rem;
         color: black;
         border: solid;
         box-sizing: content-box;
@@ -476,19 +527,39 @@ html {
         position: fixed;
         bottom: 78%;
         background: white;
-        width: 110px;
-        left: calc(50% - 50px);
+        width: 65px;
+        left: calc(50% - 27px);
+    }
+
+    #gameEndered {
+        position: fixed;
+        bottom: 78%;
+        background: white;
+        width: 65px;
+        left: calc(50% - 27px);
     }
     
     #endGame {
         position: fixed;
-        font-size: 16px;
+        font-size: .6rem;
         bottom: 84%;
         background: black;
         color: white;
         width: 110px;
         border-radius: 10px;
-        left: calc(50% - 50px);
+        left: calc(50% - 43px);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #endGamer {
+        position: fixed;
+        font-size: .6rem;
+        bottom: 84%;
+        background: black;
+        color: white;
+        width: 110px;
+        border-radius: 10px;
+        left: calc(50% - 43px);
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -514,12 +585,12 @@ html {
     #bullets {
         z-index: 1;
         position: absolute;
-        font-size: medium;
+        font-size: 1rem;
         bottom: 10px;
         left: 16px;
     }
 
-    #finalScore {
+    /* #finalScore {
         z-index: 1;
         position: absolute;
         font-size: small;
@@ -528,18 +599,18 @@ html {
         background: white;
         bottom: 5px;
         left: calc(50% - 97px);
-    }
+    } */
     
     #score  {
         z-index: 1;
         position: absolute;
-        font-size: medium;
+        font-size: 1rem;
         bottom: 10px;
         right: 16px;
     }
 
     .btn {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: black;
         border: solid;
         box-sizing: content-box;
@@ -556,21 +627,43 @@ html {
     
     #gameEnd {
         position: fixed;
+        font-size: 1rem;
         bottom: 70%;
         background: white;
-        width: 160px;
-        left: calc(50% - 67px);
+        width: 110px;
+        left: calc(50% - 45px);
+    }
+
+    #gameEndered {
+        position: fixed;
+        font-size: 1rem;
+        bottom: 70%;
+        background: white;
+        width: 110px;
+        left: calc(50% - 45px);
     }
     
     #endGame {
         position: fixed;
-        font-size: 24px;
+        font-size: 1.5rem;
         bottom: 76%;
         background: black;
         color: white;
         width: 160px;
         border-radius: 10px;
-        left: calc(50% - 67px);
+        left: calc(50% - 63px);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #endGamer {
+        position: fixed;
+        font-size: 1.5rem;
+        bottom: 76%;
+        background: black;
+        color: white;
+        width: 160px;
+        border-radius: 10px;
+        left: calc(50% - 63px);
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -596,12 +689,12 @@ html {
     #bullets {
         z-index: 1;
         position: absolute;
-        font-size: large;
+        font-size: 1.5rem;
         bottom: 10px;
         left: 16px;
     }
 
-    #finalScore {
+    /* #finalScore {
         z-index: 1;
         position: absolute;
         font-size: small;
@@ -610,18 +703,18 @@ html {
         background: white;
         bottom: 5px;
         left: calc(50% - 97px);
-    }
+    } */
     
     #score  {
         z-index: 1;
         position: absolute;
-        font-size: large;
+        font-size: 1.5rem;
         bottom: 10px;
         right: 16px;
     }
 
     .btn {
-        font-size: 38px;
+        font-size: 1.2rem;
         color: black;
         border: solid;
         box-sizing: content-box;
@@ -638,21 +731,43 @@ html {
     
     #gameEnd {
         position: fixed;
-        bottom: 29%;
+        font-size: 1.2rem;
+        bottom: 70%;
         background: white;
-        width: 210px;
-        left: calc(50% - 97px);
+        width: 110px;
+        left: calc(50% - 42px);
+    }
+
+    #gameEndered {
+        position: fixed;
+        font-size: 1.2rem;
+        bottom: 70%;
+        background: white;
+        width: 110px;
+        left: calc(50% - 42px);
     }
     
     #endGame {
         position: fixed;
-        font-size: 38px;
-        bottom: 46%;
+        font-size: 2rem;
+        bottom: 76%;
         background: black;
         color: white;
         width: 210px;
         border-radius: 10px;
-        left: calc(50% - 97px);
+        left: calc(50% - 83px);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #endGamer {
+        position: fixed;
+        font-size: 2rem;
+        bottom: 76%;
+        background: black;
+        color: white;
+        width: 210px;
+        border-radius: 10px;
+        left: calc(50% - 83px);
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -678,12 +793,12 @@ html {
     #bullets {
         z-index: 1;
         position: absolute;
-        font-size: x-large;
+        font-size: 2.1rem;
         bottom: 10px;
         left: 16px;
     }
 
-    #finalScore {
+    /* #finalScore {
         z-index: 1;
         position: absolute;
         font-size: small;
@@ -692,18 +807,18 @@ html {
         background: white;
         bottom: 5px;
         left: calc(50% - 97px);
-    }
+    } */
     
     #score  {
         z-index: 1;
         position: absolute;
-        font-size: x-large;
+        font-size: 2.1rem;
         bottom: 10px;
         right: 16px;
     }
 
     .btn {
-        font-size: 40px;
+        font-size: 1.4rem;
         color: black;
         border: solid;
         box-sizing: content-box;
@@ -720,21 +835,43 @@ html {
     
     #gameEnd {
         position: fixed;
-        bottom: 40%;
+        font-size: 1.4rem;
+        bottom: 70%;
         background: white;
-        width: 210px;
-        left: calc(50% - 97px);
+        width: 110px;
+        left: calc(50% - 42px);
+    }
+
+    #gameEndered {
+        position: fixed;
+        font-size: 1.4rem;
+        bottom: 70%;
+        background: white;
+        width: 110px;
+        left: calc(50% - 42px);
     }
     
     #endGame {
         position: fixed;
-        font-size: 38px;
-        bottom: 50%;
+        font-size: 2.2rem;
+        bottom: 80%;
         background: black;
         color: white;
         width: 210px;
         border-radius: 10px;
-        left: calc(50% - 97px);
+        left: calc(50% - 83px);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #endGamer {
+        position: fixed;
+        font-size: 2.2rem;
+        bottom: 80%;
+        background: black;
+        color: white;
+        width: 210px;
+        border-radius: 10px;
+        left: calc(50% - 83px);
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -778,12 +915,12 @@ html {
     #bullets {
         z-index: 1;
         position: absolute;
-        font-size: xx-large;
+        font-size: 2.6rem;
         bottom: 10px;
         left: 16px;
     }
 
-    #finalScore {
+    /* #finalScore {
         z-index: 1;
         position: absolute;
         font-size: small;
@@ -792,18 +929,18 @@ html {
         background: white;
         bottom: 5px;
         left: calc(50% - 97px);
-    }
+    } */
     
     #score  {
         z-index: 1;
         position: absolute;
-        font-size: xx-large;
+        font-size: 2.6rem;
         bottom: 10px;
         right: 16px;
     }
 
     .btn {
-        font-size: 40px;
+        font-size: 1.2rem;
         color: black;
         border: solid;
         box-sizing: content-box;
@@ -820,21 +957,43 @@ html {
     
     #gameEnd {
         position: fixed;
-        bottom: 40%;
+        font-size: 1.2rem;
+        bottom: 70%;
         background: white;
-        width: 210px;
-        left: calc(50% - 97px);
+        width: 110px;
+        left: calc(50% - 42px);
+    }
+
+    #gameEndered {
+        position: fixed;
+        font-size: 1.2rem;
+        bottom: 70%;
+        background: white;
+        width: 110px;
+        left: calc(50% - 42px);
     }
     
     #endGame {
         position: fixed;
-        font-size: 38px;
-        bottom: 50%;
+        font-size: 2.5rem;
+        bottom: 80%;
         background: black;
         color: white;
-        width: 210px;
+        width: 270px;
         border-radius: 10px;
-        left: calc(50% - 97px);
+        left: calc(50% - 110px);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #endGamer {
+        position: fixed;
+        font-size: 2.5rem;
+        bottom: 80%;
+        background: black;
+        color: white;
+        width: 270px;
+        border-radius: 10px;
+        left: calc(50% - 110px);
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -862,12 +1021,12 @@ html {
     #bullets {
         z-index: 1;
         position: absolute;
-        font-size: 35px;
+        font-size: 3rem;
         bottom: 10px;
         left: 16px;
     }
 
-    #finalScore {
+    /* #finalScore {
         z-index: 1;
         position: absolute;
         font-size: small;
@@ -876,18 +1035,18 @@ html {
         background: white;
         bottom: 5px;
         left: calc(50% - 97px);
-    }
+    } */
     
     #score  {
         z-index: 1;
         position: absolute;
-        font-size: 35px;
+        font-size: 3rem;
         bottom: 10px;
         right: 16px;
     }
 
     .btn {
-        font-size: 40px;
+        font-size: 2.5rem;
         color: black;
         border: solid;
         box-sizing: content-box;
@@ -904,21 +1063,43 @@ html {
     
     #gameEnd {
         position: fixed;
-        bottom: 36%;
+        font-size: 1.5rem;
+        bottom: 70%;
         background: white;
-        width: 210px;
-        left: calc(50% - 97px);
+        width: 140px;
+        left: calc(50% - 55px);
+    }
+
+    #gameEndered {
+        position: fixed;
+        font-size: 1.5rem;
+        bottom: 70%;
+        background: white;
+        width: 140px;
+        left: calc(50% - 55px);
     }
     
     #endGame {
         position: fixed;
-        font-size: 38px;
-        bottom: 45%;
+        font-size: 2.5rem;
+        bottom: 80%;
         background: black;
         color: white;
-        width: 210px;
+        width: 270px;
         border-radius: 10px;
-        left: calc(50% - 97px);
+        left: calc(50% - 110px);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #endGamer {
+        position: fixed;
+        font-size: 2.5rem;
+        bottom: 80%;
+        background: black;
+        color: white;
+        width: 270px;
+        border-radius: 10px;
+        left: calc(50% - 110px);
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -928,12 +1109,12 @@ html {
     #bullets {
         z-index: 1;
         position: absolute;
-        font-size: 55px;
+        font-size: 3.5rem;
         bottom: 10px;
         left: 26px;
     }
 
-    #finalScore {
+    /* #finalScore {
         z-index: 1;
         position: absolute;
         font-size: small;
@@ -942,18 +1123,18 @@ html {
         background: white;
         bottom: 5px;
         left: calc(50% - 97px);
-    }
+    } */
     
     #score  {
         z-index: 1;
         position: absolute;
-        font-size: 55px;
+        font-size: 3.5rem;
         bottom: 10px;
         right: 26px;
     }
 
     .btn {
-        font-size: 52px;
+        font-size: 1.6rem;
         color: black;
         border: solid;
         box-sizing: content-box;
@@ -970,21 +1151,43 @@ html {
     
     #gameEnd {
         position: fixed;
-        bottom: 37%;
+        font-size: 1.6rem;
+        bottom: 60%;
         background: white;
-        width: 270px;
-        left: calc(50% - 123px);
+        width: 180px;
+        left: calc(50% - 68px);
+    }
+
+    #gameEndered {
+        position: fixed;
+        font-size: 1.6rem;
+        bottom: 60%;
+        background: white;
+        width: 180px;
+        left: calc(50% - 68px);
     }
     
     #endGame {
         position: fixed;
-        font-size: 48px;
-        bottom: 46%;
+        font-size: 3rem;
+        bottom: 70%;
         background: black;
         color: white;
-        width: 270px;
+        width: 350px;
         border-radius: 10px;
-        left: calc(50% - 123px);
+        left: calc(50% - 135px);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #endGamer {
+        position: fixed;
+        font-size: 3rem;
+        bottom: 70%;
+        background: black;
+        color: white;
+        width: 350px;
+        border-radius: 10px;
+        left: calc(50% - 135px);
         font-family: Arial, Helvetica, sans-serif;
     }
 }
